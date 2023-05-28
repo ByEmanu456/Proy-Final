@@ -1,3 +1,6 @@
+
+/*Estilos del DOCUMENTO*/
+
 body{
     margin: 0;
     padding: 0;
@@ -6,6 +9,8 @@ body{
     background: rgb(65,58,180);
     background: linear-gradient(90deg, rgba(65,58,180,1) 0%, rgba(29,156,253,1) 42%, rgba(69,252,212,1) 100%);
 }
+
+/*Estilos del FORMULARIO*/
 
 .formulario {
     position: absolute;
@@ -33,6 +38,8 @@ body{
     box-sizing: border-box;
 }
 
+/*Estilos de las ENTRADAS DE DATOS (cajas de texto, fecha, numbres, etc.)*/
+
 form .entrada {
     position: relative;
     border-bottom: 3px solid #766b56;
@@ -49,6 +56,8 @@ form .entrada {
     outline: none;
 }
 
+/*Estilos de las ENTRADAS DE DATOS (CheckBox, Radios, Selects, etc.)*/
+
 form .entrada2{
     display: grid;
     place-items: center center;
@@ -58,6 +67,8 @@ form .entrada2{
     background-color: #aa9a7d;
     border-radius: 10px;
 }
+
+/*Estilos de los VINCULOS*/
 
 .vinculos{
     text-align: center;
@@ -74,9 +85,12 @@ form .entrada2{
     color: #8c7659;
 }
 
+/*Estilos de los BOTONES*/
+
 .contenedorBtn{
     display: grid;
     place-items: center center;
+    margin: 10px;
 }
 
 .boton{
