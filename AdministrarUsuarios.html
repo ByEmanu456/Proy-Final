@@ -1,45 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Administrar Usuarios</title>
-    <link rel="stylesheet" href="Estilos.css">
-</head>
-<body>
-    <div class="formulario">
+<html>
+    <head>
+        <title>Administrar Usuarios</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Estilos.css">
+        <link rel="stylesheet" href="EstilosAdministrarUsuarios.css">
+    </head>
 
-        <div class="logo">
-            <img alt="LOGO">
-        </div>
-
-        <h1>Cree una cuenta aquí</h1>
-
-        <form>
-            <div class="entrada">
-                <label>Nombre</label>
-                <input type="text" placeholder="Escriba su nombre" id="">
-            </div>
-
-            <div class="entrada">
-                <label>Apellidos</label>
-                <input type="text" placeholder="Escriba sus apellidos" id="">
-            </div>
-
-            <div class="entrada">
-                <label>Edad</label>
-                <input type="number" placeholder="Ingrese su edad" id="">
-            </div>
-
-            <div class="entrada">
-                <label>Fecha de nacimiento</label>
-                <input type="date">
-            </div>
-
-            <div class="contenedorBtn">
-                <input type="button" value="Siguiente" class="boton" onclick="location='CrearCuenta2.html'">   
+    <body>
+        <div class="formulario">
+            <div class="logo">
+                <img alt="LOGO" class="favicon">
             </div>
             
-        </form>
-    </div>
-</body>
+            <h1>Elimina o escoge el usuario</h1>
+
+            <form>
+
+                <div class="usuarios">
+                    <div class="user">
+                        <label> Hola </label>
+                        <label><input type="radio" name="usuario"></label>
+                    </div>
+                    <div class="user">
+                        <label> Hola </label>
+                        <label><input type="radio" name="usuario"></label>
+                    </div>
+                    <div class="user">
+                        <label> Hola </label>
+                        <label><input type="radio" name="usuario"></label>
+                    </div>
+                    <div class="user">
+                        <label> Hola </label>
+                        <label><input type="radio" name="usuario"></label>
+                    </div>
+                    <div class="user">
+                        <label> Hola </label>
+                        <label><input type="radio" name="usuario"></label>
+                    </div>
+                    <div class="user">
+                        <label> Hola </label>
+                        <label><input type="radio" name="usuario"></label>
+                    </div>
+                </div>
+
+                <div class="contenedorBtn">
+                    <input type="submit" value="Seleccionar" class="boton">              
+                </div>
+
+                <div class="contenedorBtn">
+                    <input type="button" value="Eliminar" class="boton">
+                </div>
+    
+            </form>
+        </div>
+    </body>
 </html>
