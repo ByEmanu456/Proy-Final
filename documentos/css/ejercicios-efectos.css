@@ -1,0 +1,23 @@
+.imagen-contenedor > img:hover, .imagen-contenedor > .imagen-texto:hover + img{
+    border: 5px solid #007FFF;
+    filter: brightness(70%);
+}
+
+.imagen-contenedor:hover .imagen-texto {
+    opacity: 1;
+}
+
+.respuesta-visible {
+    width: 300px;
+    opacity: 1;
+}
+
+.procedimiento-visible {
+    width: 500px;
+    opacity: 1;
+    margin-bottom: 20px;
+}
+
+.subtitulo-visible{
+    opacity: 1;
+}

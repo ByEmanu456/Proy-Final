@@ -1,0 +1,66 @@
+.boton-revisar:hover{
+    background-color: #024188;
+}
+
+.boton-revisar-click{  
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 1);
+}
+
+.opcion:hover{
+    border: 3px solid #007FFF;
+}
+
+.opcion-seleccionda{
+    background-color: #72A0C1;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    transition-duration: .5s;
+}
+
+.opcion-seleccionda:hover{
+    border: none;
+}
+
+.opcion-deshabilitada{
+    background-color: #5072A7;
+    transition: .5s;
+}
+
+.opcion-deshabilitada:hover{
+    border: none;
+}
+
+.opcion-correcta{
+    background-color: green;
+    color: white;
+}
+
+.opcion-incorrecta{
+    background-color: red;
+    color: white;
+}
+
+.test-contenedor-aprobado{
+    background: linear-gradient(0deg, rgba(63,255,0, 0.9) 0%, rgba(63,255,0,0.5) 20%, rgba(255,255,255,0) 65%, rgba(255,255,255,0) 100%);
+}
+
+.test-contenedor-desaprobado{
+    background: linear-gradient(0deg, rgba(250,128,114,1) 0%, rgba(255,173,164,1) 20%, rgba(255,255,255,0) 65%, rgba(255,255,255,0) 100%);
+}
+
+.aciertos-aprobado{
+    background-image: radial-gradient(circle at 50% -20.71%, #ffef37 0, #fff327 7.14%, #fff619 14.29%, #e8f80f 21.43%, #c9f911 28.57%, #a6f81e 35.71%, #7cf62c 42.86%, #3cf23c 50%, #00ee4d 57.14%, #00ea60 64.29%, #00e574 71.43%, #00e18a 78.57%, #00dea1 85.71%, #00dab9 92.86%, #00d8d2 100%);
+}
+
+.aciertos-desaprobado{
+    background-image: radial-gradient(circle at 50% -20.71%, #de9c2c 0, #e5922a 8.33%, #ea852b 16.67%, #ee772d 25%, #f16731 33.33%, #f35436 41.67%, #f23c3c 50%, #f01843 58.33%, #ed004c 66.67%, #e90057 75%, #e30064 83.33%, #db0071 91.67%, #d10080 100%);
+}
+
+.aciertos-resultado-aprobado{
+    color: #00693E;
+    font-size: 100px;
+}
+
+.aciertos-resultado-desaprobado{
+    color: #CC0000;
+    font-size: 50px;
+}

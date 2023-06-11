@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/menu-nav.css">
+    <link rel="stylesheet" href="../css/test.css">
+    <link rel="stylesheet" href="../css/test-efectos.css">
+    <script src="../js/test.js"></script>
+</head>
+<body>
+
+    <!--BARRA DE MENÚ-->
+
+    <header class="menu">
+        <a href="index.html" class="logo"><img src="../../imagenes/ICONOS/favicon2.png" class="logo-favicon"> <span class="logo-eco">Eco</span><span class="logo-byte">Byte</span></p></a>
+        <nav class="menu-nav">
+            <a href="#">¿Quienes somos?</a>
+            <a href="#">Calificaciones</a>
+            <a href="#">Mi Cuenta</a>
+        </nav>
+    </header>
+
+   <!--SECCIÓN DE LA INFORMACIÓN-->
+
+
+   <section>
+    <div class="test-panel">
+
+        <div class="test-contenedor" id="contenedor">
+            <h1>Pregunta 1/10</h1>
+            <hr>
+            <h2>¿Cuál es la variable independiente en la siguiente ecuación?</h2>
+
+            <div id="pregunta">
+            
+                <div class="imagen"><img src="../../imagenes/ejercicios/ejercicio1.jpg" class="img"></div>
+                <form>
+
+                    <div class="opcion">
+                        <label> Hola </label>
+                        <label><input type="radio" name="respuestas" onfocus="opcionFocus()"></label>
+                    </div>
+
+                    <div class="opcion">
+                        <label> Hola </label>
+                        <label><input type="radio" name="respuestas" onfocus="opcionFocus()" id="correcta"></label>
+                    </div>
+
+                    <div class="opcion">
+                        <label> Hola </label>
+                        <label><input type="radio" name="respuestas" onfocus="opcionFocus()"></label>
+                    </div>
+
+                    <div class="opcion">
+                        <label> Hola </label>
+                        <label><input type="radio" name="respuestas" onfocus="opcionFocus()"></label>
+                    </div>
+
+                </form>
+
+            </div>
+
+            <input type="button" value="REVISAR" class="boton-revisar" id="boton-revisar" onclick="revisar()">
+
+        </div>
+            
+            
+
+        <div class="botones">
+            <input type="button" class="boton-regresar" value="REGRESAR" onclick="boton_regresar()">
+            <h1>Examen 1</h1>
+            <input type="button" class="boton-siguiente" value="TERMINADO!">
+        </div>
+    </div>
+    </section>
+</body>
+</html>

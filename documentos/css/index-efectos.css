@@ -1,0 +1,58 @@
+
+/* ESTILO DEL NIVEL DEPENDIENDO SU ESTADO */
+
+.nivel-actual{
+    background: linear-gradient(180deg, #ade5ff 0, #7dcefb 25%, #3cb5f2 50%, #009ce9 75%, #0085e0 100%);
+}
+
+.barra-actual{
+    border: 5px solid #2d8cdf;
+}
+
+.nivel-completado{
+    background-image: linear-gradient(180deg, #e6ff99 0, #ceff9b 16.67%, #b5ff9d 33.33%, #9df29d 50%, #86e49d 66.67%, #72d89d 83.33%, #60ce9e 100%);
+}
+
+.barra-completado{
+    border: 5px solid #4CBB17;
+}
+
+.nivel-abrobado{
+    background-image: radial-gradient(circle at 50% -20.71%, #ffffae 0, #ffff92 16.67%, #ffff75 33.33%, #ffff56 50%, #dbf235 66.67%, #b7e606 83.33%, #90da00 100%);
+}
+
+/* EFECTOS OVER DE BOTONES */
+
+.nivel-actual:hover{
+    border: 3px solid #313186;
+}
+.nivel-completado:hover{
+    border: 3px solid #008000;
+}
+.nivel-abrobado:hover{
+    border: 3px solid #bb9900;
+}
+
+/* EFECTO AL SELECCIONAR UN NIVEL */
+
+.nivel-seleccionado{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    transition: .3s;
+}
+
+.nivel-seleccionado label{
+    font-size: 48px;
+    transition: .3s;
+}
+
+.nivel-seleccionado.nivel-completado{
+    border: 3px solid green;
+}
+
+.nivel-seleccionado.nivel-abrobado{
+    border: 3px solid #bb9900;
+}
+
+.nivel-seleccionado.nivel-actual{
+    border: 3px solid #313186;
+}

@@ -1,0 +1,94 @@
+/*Resetear valores por defecto de los elementos*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    Font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+}
+
+/*Fondo de la pagina*/
+
+body{
+    background-image: url(../../imagenes/backgrounds/background5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+body::before{
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgb(8, 8, 8) 0%, rgb(81, 81, 81) 42%, rgba(255, 255, 255, 0) 100%);
+    opacity: 0.5;
+    z-index: -1;
+
+}
+
+/*Sección del video*/
+
+section{    
+    height: calc(100vh - 60px);
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-panel{
+    height: 85%;
+    width: 850px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.video-contenedor{
+    height: 88%;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video{
+    width: 90%;
+    border-radius: 10px;
+}
+
+.botones{
+    height: 12%;
+    width: 100%;
+    border-top: 1px solid rgb(111, 109, 108);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botones h1{
+    position: absolute;
+}
+
+.boton-siguiente{
+    margin-left: auto;
+    height: 80%;
+    width: 100px;
+    border-radius: 10px;
+    float: left;
+    margin-right: 20px;
+}
+
+

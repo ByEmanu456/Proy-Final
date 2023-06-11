@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/menu-nav.css">
+    <link rel="stylesheet" href="../css/ejercicios.css">
+    <link rel="stylesheet" href="../css/ejercicios-efectos.css">
+    <script src="../js/ejercicios.js"></script>
+</head>
+<body>
+
+    <!--BARRA DE MENÚ-->
+
+    <header class="menu">
+        <a href="index.html" class="logo"><img src="../../imagenes/ICONOS/favicon2.png" class="logo-favicon"> <span class="logo-eco">Eco</span><span class="logo-byte">Byte</span></p></a>
+        <nav class="menu-nav">
+            <a href="#">¿Quienes somos?</a>
+            <a href="#">Calificaciones</a>
+            <a href="#">Mi Cuenta</a>
+        </nav>
+    </header>
+
+   <!--SECCIÓN DE LOS EJERCICIOS-->
+
+
+    <section>
+        <div class="ejercicios-panel">
+            <div class="ejercicios-contenedor">
+
+                <h1>Ejercicios sobre constantes y variables</h1>
+                
+                <!--EJERCICIO 1-->
+
+                <hr>
+                <h2>Ejercicio 1</h2>
+                <h3>Identifica la variable independiente en la ecuación</h3>
+
+                <div class="ejercicios-img">
+                    
+                    <div class="imagen-contenedor">
+                        <p class="imagen-texto" onclick="verRespuesta(1)">Mostrar respuesta</p>
+                        <img src="../../imagenes/ejercicios/ejercicio1.jpg" onclick="verRespuesta(1)">   
+                    </div>
+
+                    <div><img src="../../imagenes/ejercicios/ejercicio1.jpg" class="imagen-oculta" id="respuesta1"></div>
+
+                </div>
+
+                <h3 id="subtitulo1" class="subtitulo">Procedimiento</h3>
+                <img src="../../imagenes/ejercicios/ejercicio2.png" class="imagen-oculta" id="procedimiento1">
+
+                <!--EJERCICIO 2-->
+
+                <hr>
+                <h2>Ejercicio 2</h2>
+                <h3>Identifica la variable independiente en la ecuación</h3>
+
+                <div class="ejercicios-img">
+                    
+                    <div class="imagen-contenedor">
+                        <p class="imagen-texto" onclick="verRespuesta(2)">Mostrar respuesta</p>
+                        <img src="../../imagenes/ejercicios/ejercicio1.jpg" onclick="verRespuesta(2)">   
+                    </div>
+
+                    <div><img src="../../imagenes/ejercicios/ejercicio1.jpg" class="imagen-oculta" id="respuesta2"></div>
+
+                </div>
+
+                <h3 id="subtitulo2" class="subtitulo">Procedimiento</h3>
+                <img src="../../imagenes/ejercicios/ejercicio1.jpg" class="imagen-oculta" id="procedimiento2">
+                
+                <!--EJERCICIO 3-->
+
+                <hr>
+                <h2>Ejercicio 3</h2>
+                <h3>Identifica la variable independiente en la ecuación</h3>
+
+                <div class="ejercicios-img">
+                    
+                    <div class="imagen-contenedor">
+                        <p class="imagen-texto" onclick="verRespuesta(3)">Mostrar respuesta</p>
+                        <img src="../../imagenes/ejercicios/ejercicio1.jpg" onclick="verRespuesta(3)">   
+                    </div>
+
+                    <div><img src="../../imagenes/ejercicios/ejercicio1.jpg" class="imagen-oculta" id="respuesta3"></div>
+
+                </div>
+
+                <h3 id="subtitulo3" class="subtitulo">Procedimiento</h3>
+                <img src="../../imagenes/ejercicios/ejercicio1.jpg" class="imagen-oculta" id="procedimiento3">   
+                
+            </div>
+
+
+            <div class="botones">
+                <input type="button" class="boton-regresar" value="REGRESAR" onclick="boton_regresar()">
+                <h1>Ejercicios de práctica 1</h1>
+                <input type="button" class="boton-siguiente" value="TERMINADO!">
+            </div>
+    </div>
+    </section>
+</body>
+</html>
+
