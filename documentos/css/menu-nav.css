@@ -49,6 +49,10 @@ a:visited {
     color: #6778bd;
 }
 
+marquee{
+    width: 100%;
+}
+
 marquee p{
     color: #ffffffc9;
 }
@@ -62,11 +66,11 @@ marquee p a:hover{
 }
 
 .menu-nav{
-    width: 200%;
+    width: 150%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 25px;
+    margin-left: 20px;
 }
 
 .menu-nav a{
