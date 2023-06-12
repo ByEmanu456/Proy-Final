@@ -21,7 +21,7 @@
     background-image: radial-gradient(circle at 50% -20.71%, #ffffae 0, #ffff92 16.67%, #ffff75 33.33%, #ffff56 50%, #dbf235 66.67%, #b7e606 83.33%, #90da00 100%);
 }
 
-/* EFECTOS OVER DE BOTONES */
+/* EFECTOS HOVER DE BOTONES */
 
 .nivel-actual:hover{
     border: 3px solid #313186;
@@ -37,12 +37,12 @@
 
 .nivel-seleccionado{
     box-shadow: 0 0 20px rgba(0, 0, 0, 1);
-    transition: .3s;
+    transition: box-shadow .3s, opacity .7s;
 }
 
 .nivel-seleccionado label{
     font-size: 48px;
-    transition: .3s;
+    transition: font-size .3s;
 }
 
 .nivel-seleccionado.nivel-completado{
@@ -55,4 +55,34 @@
 
 .nivel-seleccionado.nivel-actual{
     border: 3px solid #313186;
+}
+
+/*EFECTOS DE CAMBIO DE PANEL*/
+
+.objeto-pequeño{
+    width: 130px;
+}
+
+.objeto-desaparecido > *{
+    opacity: 0;
+}
+
+.panel-objetos-desaparecidos > * > *{
+    opacity: 0;
+}
+
+.panel-objetos-desaparecidos > .titulo-nombre{
+    width: 130px;
+}
+
+/* EFECTO DE BOTON DESHABILITADO*/
+
+.boton-deshabilitado{
+    background: #9c9c9c;
+    color: #242424;
+}
+
+.boton-deshabilitado:hover{
+    background: #9c9c9c;
+    color: #242424;
 }

@@ -28,7 +28,7 @@ body{
 }
 
 
-body::before{
+body:before{
     content: "";
     width: 100%;
     min-height: 100vh;
@@ -54,11 +54,10 @@ main{
 .titulo-contenedor{
     text-align: center;
     font-size: 25px;
+    margin: auto;
     margin-top: 65px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 65%;
+    position: relative;
 }
 
 .titulo-numero{
@@ -68,27 +67,36 @@ main{
     border-radius: 50%;
     width: 100px;
     height: 100px;
+    top: -10px;
+    left: -20px;
+
     position: absolute;
-    left: 16%;
-    
     display: flex;
     align-items: center;
     justify-content: center;
+
+    transition: .65s;
+}
+
+.titulo-numero h1{
+    transition: .5s;
 }
 
 .titulo-nombre{
     background-image: linear-gradient(270deg, #ed9841 15%, #f0893e 30%, #f2793c 50%, #f3673d 58.33%, #f35542 66.67%, #f34249 75%, #f22b52 83.33%, #f0065d 91.67%, #ec0069 100%);
     border-radius: 10px;
-    width: 65%;
+    width: 100%;
     height: 80px;
-
     display: flex;
     align-items: center;
     justify-content: center;
+
+    transition: .5s;
 }
 
 .titulo-nombre h1{
     transform: translate(5%,0);
+    transition: .2s;
 }
 
 /*Progreso del curso (NIVELES)*/
@@ -102,8 +110,11 @@ main{
     position: relative;
 }
 
-.niveles-atras{
+.niveles-contenedor > *{
+    transition: opacity .7s;
+}
 
+.niveles-atras{
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 
@@ -201,6 +212,8 @@ main{
     border: none;
 
     font-size: 30px;
+
+    transition: .3s;
 }
 
 .niveles-boton-iz:hover{
@@ -220,6 +233,8 @@ main{
     border: none;
 
     font-size: 30px;
+
+    transition: .3s;
 }
 
 .niveles-boton-de:hover{

@@ -46,7 +46,6 @@ function verifiProgreso() {
       divNiveles[i].classList.add("nivel-actual");
       barrasNiveles[i].classList.add("barra-actual");
       radiosArray[i].disabled = false;
-      //radiosArray[i].focus();
     }
       
   }
@@ -67,13 +66,9 @@ function verifiProgreso() {
   if(userNivel == 17 && n_panel == 3){
     if(promedio() == 10 ){
       document.getElementById("corona").classList.add("nivel-completado");
-      console.log("entro")
-      console.log(promedio())
     }
     else{
       document.getElementById("corona").classList.add("nivel-actual");
-      console.log(n_panel)
-      console.log(promedio())
     }
   }
 

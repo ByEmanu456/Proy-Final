@@ -160,31 +160,7 @@ function panelActual(){
         document.getElementById("titulo").innerHTML = '<div class="titulo-nombre"><h1>Derivada de una función</h1></div><div class="titulo-numero"><h1>4</h1></div>'
         document.getElementById("niveles").innerHTML = radios_panel4;
     }
-}
-
-var elementoFocus;
-
-function avanzar(){
-    if(n_panel<3){
-        n_panel++;
-        panelActual();
-        verifiProgreso();           
-    }
-
-    if(document.getElementById("radio" + elementoFocus)){ document.getElementById("radio" + elementoFocus).focus() }
-
-  };
-  
-  function regresar(){
-    if(n_panel>0){
-        n_panel--;
-        panelActual(); 
-        verifiProgreso();
-    }
-
-    if(document.getElementById("radio" + elementoFocus)){ document.getElementById("radio" + elementoFocus).focus() }
-
-  };  
+} 
 
 //RADIOS DEL TEMA 1
 
@@ -470,6 +446,47 @@ function radio16focus(){
     elementoFocus = 16;
 };
 
+var elementoFocus;
+
+function avanzar(){
+
+
+    if(n_panel<3){
+        n_panel++;
+
+        efectoDesaparecer();
+
+        setTimeout(function(){
+            panelActual(); 
+            verifiProgreso();
+            if(document.getElementById("radio" + elementoFocus)){ document.getElementById("radio" + elementoFocus).focus() }
+        },600);
+
+        if(n_panel == 3){ inhabilitarBoton(2); }
+        if(n_panel == 1){ habilitarBoton(1); }
+    }
+
+};
+  
+  function regresar(){
+
+    if(n_panel>0){
+        n_panel--; 
+
+        efectoDesaparecer();
+
+        setTimeout(function(){
+            panelActual(); 
+            verifiProgreso();
+            if(document.getElementById("radio" + elementoFocus)){ document.getElementById("radio" + elementoFocus).focus() }
+        },600);
+
+        if(n_panel == 0){ inhabilitarBoton(1); }
+        if(n_panel == 2){ habilitarBoton(2); }
+    }
+
+}; 
+
 function radioSelec(contenedor){
 
     var contenedores = document.getElementsByClassName("nivel-contenedor");
@@ -483,5 +500,81 @@ function radioSelec(contenedor){
     contenedor.classList.add("nivel-seleccionado");
 }
 
+function efectoDesaparecer(){
+
+    let boton1 = document.getElementsByClassName("niveles-boton-iz")[0];
+    let boton2 = document.getElementsByClassName("niveles-boton-de")[0];
+    let nombre;
+    let numero;
+    let panelTitulo = document.getElementById("titulo");
+    let panelNiveles = document.getElementById("niveles");
+
+    boton1.disabled = true;
+    boton2.disabled = true;
+
+    panelTitulo.classList.add("panel-objetos-desaparecidos");
+    panelNiveles.classList.add("objeto-desaparecido");
+
+    setTimeout(function (){
+
+        nombre = document.getElementsByClassName("titulo-nombre")[0];
+        numero = document.getElementsByClassName("titulo-numero")[0];
+        nombre.classList.add("objeto-desaparecido");
+        nombre.classList.add("objeto-pequeño");
+        numero.classList.add("objeto-desaparecido");
+
+        panelTitulo.classList.remove("panel-objetos-desaparecidos");
+        
+    },650);
+
+    setTimeout(function(){
+        nombre.classList.remove("objeto-pequeño");   
+    },651);
+
+    setTimeout(function(){
+        panelNiveles.classList.remove("objeto-desaparecido");     
+    },1100);
+
+    setTimeout(function(){    
+        nombre.classList.remove("objeto-desaparecido");
+        numero.classList.remove("objeto-desaparecido");
+        boton1.disabled = false;
+        boton2.disabled = false;
+    },1200);
+
+}
 
 
+
+
+function inhabilitarBoton(numBoton){
+    
+    let boton1 = document.getElementsByClassName("niveles-boton-iz")[0];
+    let boton2 = document.getElementsByClassName("niveles-boton-de")[0];
+
+    if(numBoton == 1){
+        boton1.disabled = true;
+        boton1.classList.add("boton-deshabilitado");
+    }
+
+    if(numBoton == 2){
+        boton2.disabled = true;
+        boton2.classList.add("boton-deshabilitado");
+    }
+}
+
+function habilitarBoton(numBoton){
+    
+    let boton1 = document.getElementsByClassName("niveles-boton-iz")[0];
+    let boton2 = document.getElementsByClassName("niveles-boton-de")[0];
+
+    if(numBoton == 1){
+        boton1.disabled = false;
+        boton1.classList.remove("boton-deshabilitado");
+    }
+
+    if(numBoton == 2){
+        boton2.disabled = false;
+        boton2.classList.remove("boton-deshabilitado");
+    }
+}

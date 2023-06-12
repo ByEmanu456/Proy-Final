@@ -19,7 +19,7 @@ function revisar(){
             opcionSelec.parentNode.parentNode.classList.add("opcion-correcta");
             aciertos++;
             efectoBoton();
-            document.getElementById("boton-revisar").setAttribute("value","SIGUENTE");
+            document.getElementById("boton-revisar").setAttribute("value","SIGUIENTE");
             document.getElementById("boton-revisar").setAttribute("onclick","siguiente()");
         }
     
@@ -27,7 +27,7 @@ function revisar(){
     
             opcionSelec.parentNode.parentNode.classList.add("opcion-incorrecta");
             efectoBoton();
-            document.getElementById("boton-revisar").setAttribute("value","SIGUENTE");
+            document.getElementById("boton-revisar").setAttribute("value","SIGUIENTE");
             document.getElementById("boton-revisar").setAttribute("onclick","siguiente()");
         }
     
