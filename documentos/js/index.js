@@ -144,6 +144,7 @@ function panelActual(){
     if(n_panel == 0){
         document.getElementById("titulo").innerHTML = '<div class="titulo-nombre"><h1>Variables y constantes</h1></div><div class="titulo-numero"><h1>1</h1></div>'
         document.getElementById("niveles").innerHTML = radios_panel1;
+        inhabilitarBoton(1);
     }
 
     else if(n_panel == 1){
@@ -159,6 +160,7 @@ function panelActual(){
     else if(n_panel == 3){
         document.getElementById("titulo").innerHTML = '<div class="titulo-nombre"><h1>Derivada de una función</h1></div><div class="titulo-numero"><h1>4</h1></div>'
         document.getElementById("niveles").innerHTML = radios_panel4;
+        inhabilitarBoton(2); 
     }
 } 
 
@@ -245,7 +247,7 @@ function radio5focus(){
         <p>Autor:</p>
     </div>`;
 
-    document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='#'"></input> `;
+    document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='2-video.html'"></input> `;
 
     var contenedor = document.getElementById("nivel5");
     radioSelec(contenedor);
@@ -262,7 +264,7 @@ function radio6focus(){
         <p>En estos documentos podras leer mas infomracion</p> <br>
     </div>`;
 
-    document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='#'"></input> `;
+    document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='2-informacion.html'"></input> `;
 
     var contenedor = document.getElementById("nivel6");
     radioSelec(contenedor);
@@ -316,7 +318,7 @@ function radio9focus(){
         <p>Autor:</p>
     </div>`;
 
-    document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='#'"></input> `;
+    document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='3-video.html'"></input> `;
 
     var contenedor = document.getElementById("nivel9");
     radioSelec(contenedor);
@@ -387,7 +389,7 @@ function radio13focus(){
         <p>Autor:</p>
     </div>`;
 
-    document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='#'"></input> `;
+    document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='4-video.html'"></input> `;
 
     var contenedor = document.getElementById("nivel13");
     radioSelec(contenedor);
@@ -462,7 +464,6 @@ function avanzar(){
             if(document.getElementById("radio" + elementoFocus)){ document.getElementById("radio" + elementoFocus).focus() }
         },600);
 
-        if(n_panel == 3){ inhabilitarBoton(2); }
         if(n_panel == 1){ habilitarBoton(1); }
     }
 
@@ -481,7 +482,6 @@ function avanzar(){
             if(document.getElementById("radio" + elementoFocus)){ document.getElementById("radio" + elementoFocus).focus() }
         },600);
 
-        if(n_panel == 0){ inhabilitarBoton(1); }
         if(n_panel == 2){ habilitarBoton(2); }
     }
 

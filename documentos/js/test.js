@@ -49,7 +49,10 @@ function revisar(){
 }
 
 function siguiente(){
-    efectoBoton()
+    
+    efectoBoton();
+    efectoDesaparecer();
+
     pregunta++;
     var contenido;
 
@@ -59,30 +62,30 @@ function siguiente(){
                      
         <h1>Pregunta 2/10</h1>
         <hr>
-        <h2>¿Cuál es la variable independiente en la siguiente ecuación?</h2>
+        <h2>¿Cuál es la variable dependiente de la siguiente ecuación?</h2>
 
         <div id="pregunta">
         
-            <div class="imagen"><img src="../../imagenes/ejercicios/ejercicio1.jpg" class="img"></div>
+            <div class="imagen"><img src="../../imagenes/ejercicios/TEMA1/1_2_Problema.png" class="img"></div>
             <form>
 
                 <div class="opcion">
-                    <label> Hola </label>
+                    <label> z </label>
+                    <label><input type="radio" name="respuestas" onfocus="opcionFocus()"  id="correcta"></label>
+                </div>
+
+                <div class="opcion">
+                    <label> x </label>
+                    <label><input type="radio" name="respuestas" onfocus="opcionFocus()""></label>
+                </div>
+
+                <div class="opcion">
+                    <label> y </label>
                     <label><input type="radio" name="respuestas" onfocus="opcionFocus()"></label>
                 </div>
 
                 <div class="opcion">
-                    <label> Hola </label>
-                    <label><input type="radio" name="respuestas" onfocus="opcionFocus()" id="correcta"></label>
-                </div>
-
-                <div class="opcion">
-                    <label> Hola </label>
-                    <label><input type="radio" name="respuestas" onfocus="opcionFocus()"></label>
-                </div>
-
-                <div class="opcion">
-                    <label> Hola </label>
+                    <label> y<sup>2</sup> </label>
                     <label><input type="radio" name="respuestas" onfocus="opcionFocus()"></label>
                 </div>
 
@@ -99,30 +102,30 @@ function siguiente(){
                      
         <h1>Pregunta 3/10</h1>
         <hr>
-        <h2>¿Cuál es la variable independiente en la siguiente ecuación?</h2>
+        <h2>¿Cuál es la variable independiente de la siguiente ecuación?</h2>
 
         <div id="pregunta">
         
-            <div class="imagen"><img src="../../imagenes/ejercicios/ejercicio1.jpg" class="img"></div>
+            <div class="imagen"><img src="../../imagenes/ejercicios/TEMA1/1_3_Problema.png" class="img"></div>
             <form>
 
                 <div class="opcion">
-                    <label> Hola </label>
+                    <label> x<sup>2</sup> </label>
                     <label><input type="radio" name="respuestas" onfocus="opcionFocus()"></label>
                 </div>
 
                 <div class="opcion">
-                    <label> Hola </label>
-                    <label><input type="radio" name="respuestas" onfocus="opcionFocus()" id="correcta"></label>
-                </div>
-
-                <div class="opcion">
-                    <label> Hola </label>
+                    <label> x<sup>2</sup> , x </label>
                     <label><input type="radio" name="respuestas" onfocus="opcionFocus()"></label>
                 </div>
 
                 <div class="opcion">
-                    <label> Hola </label>
+                    <label> x </label>
+                    <label><input type="radio" name="respuestas" onfocus="opcionFocus()"  id="correcta"></label>
+                </div>
+
+                <div class="opcion">
+                    <label> x<sup>2</sup> , 4x </label>
                     <label><input type="radio" name="respuestas" onfocus="opcionFocus()"></label>
                 </div>
 
@@ -139,30 +142,30 @@ function siguiente(){
                      
         <h1>Pregunta 4/10</h1>
         <hr>
-        <h2>¿Cuál es la variable independiente en la siguiente ecuación?</h2>
+        <h2>¿Cuál es la constante absoluta de la siguiente ecuación?</h2>
 
         <div id="pregunta">
         
-            <div class="imagen"><img src="../../imagenes/ejercicios/ejercicio1.jpg" class="img"></div>
+            <div class="imagen"><img src="../../imagenes/ejercicios/TEMA1/1_4_Problema.png" class="img"></div>
             <form>
 
                 <div class="opcion">
-                    <label> Hola </label>
+                    <label> 4/3 </label>
                     <label><input type="radio" name="respuestas" onfocus="opcionFocus()"></label>
                 </div>
 
                 <div class="opcion">
-                    <label> Hola </label>
+                    <label> 𝝅 </label>
                     <label><input type="radio" name="respuestas" onfocus="opcionFocus()" id="correcta"></label>
                 </div>
 
                 <div class="opcion">
-                    <label> Hola </label>
+                    <label> V </label>
                     <label><input type="radio" name="respuestas" onfocus="opcionFocus()"></label>
                 </div>
 
                 <div class="opcion">
-                    <label> Hola </label>
+                    <label> r </label>
                     <label><input type="radio" name="respuestas" onfocus="opcionFocus()"></label>
                 </div>
 
@@ -179,31 +182,31 @@ function siguiente(){
                      
         <h1>Pregunta 5/10</h1>
         <hr>
-        <h2>¿Cuál es la variable independiente en la siguiente ecuación?</h2>
+        <h2>¿Cuál es la variable independiente de la siguiente ecuación?</h2>
 
         <div id="pregunta">
         
-            <div class="imagen"><img src="../../imagenes/ejercicios/ejercicio1.jpg" class="img"></div>
+            <div class="imagen"><img src="../../imagenes/ejercicios/TEMA1/1_5_Problema.png" class="img"></div>
             <form>
 
                 <div class="opcion">
-                    <label> Hola </label>
+                    <label> b </label>
                     <label><input type="radio" name="respuestas" onfocus="opcionFocus()"></label>
                 </div>
 
                 <div class="opcion">
-                    <label> Hola </label>
+                    <label> A </label>
+                    <label><input type="radio" name="respuestas" onfocus="opcionFocus()"></label>
+                </div>
+
+                <div class="opcion">
+                    <label> h </label>
+                    <label><input type="radio" name="respuestas" onfocus="opcionFocus()"></label>
+                </div>
+
+                <div class="opcion">
+                    <label> b , h </label>
                     <label><input type="radio" name="respuestas" onfocus="opcionFocus()" id="correcta"></label>
-                </div>
-
-                <div class="opcion">
-                    <label> Hola </label>
-                    <label><input type="radio" name="respuestas" onfocus="opcionFocus()"></label>
-                </div>
-
-                <div class="opcion">
-                    <label> Hola </label>
-                    <label><input type="radio" name="respuestas" onfocus="opcionFocus()"></label>
                 </div>
 
             </form>
@@ -217,32 +220,32 @@ function siguiente(){
 
         case 6: contenido = `
                      
-        <h1>Pregunta 4/10</h1>
+        <h1>Pregunta 6/10</h1>
         <hr>
-        <h2>¿Cuál es la variable independiente en la siguiente ecuación?</h2>
+        <h2>¿Cuál es la variable independiente de la siguiente ecuación?</h2>
 
         <div id="pregunta">
         
-            <div class="imagen"><img src="../../imagenes/ejercicios/ejercicio1.jpg" class="img"></div>
+            <div class="imagen"><img src="../../imagenes/ejercicios/TEMA1/1_6_Problema.png" class="img"></div>
             <form>
 
                 <div class="opcion">
-                    <label> Hola </label>
-                    <label><input type="radio" name="respuestas" onfocus="opcionFocus()"></label>
-                </div>
-
-                <div class="opcion">
-                    <label> Hola </label>
+                    <label> y , z </label>
                     <label><input type="radio" name="respuestas" onfocus="opcionFocus()" id="correcta"></label>
                 </div>
 
                 <div class="opcion">
-                    <label> Hola </label>
+                    <label> x </label>
                     <label><input type="radio" name="respuestas" onfocus="opcionFocus()"></label>
                 </div>
 
                 <div class="opcion">
-                    <label> Hola </label>
+                    <label> x , y , z </label>
+                    <label><input type="radio" name="respuestas" onfocus="opcionFocus()"></label>
+                </div>
+
+                <div class="opcion">
+                    <label> y<sup>2</sup> , y , z </label>
                     <label><input type="radio" name="respuestas" onfocus="opcionFocus()"></label>
                 </div>
 
@@ -255,7 +258,167 @@ function siguiente(){
 
         break;
 
-        case 7: 
+        case 7: contenido = `
+                     
+        <h1>Pregunta 7/10</h1>
+        <hr>
+        <h2>¿Cuál es la constante arbitraria de la siguiente ecuación?</h2>
+
+        <div id="pregunta">
+        
+            <div class="imagen"><img src="../../imagenes/ejercicios/TEMA1/1_7_Problema.png" class="img"></div>
+            <form>
+
+                <div class="opcion">
+                    <label> − 3/4 </label>
+                    <label><input type="radio" name="respuestas" onfocus="opcionFocus()" id="correcta"></label>
+                </div>
+
+                <div class="opcion">
+                    <label> 3/4 </label>
+                    <label><input type="radio" name="respuestas" onfocus="opcionFocus()"></label>
+                </div>
+
+                <div class="opcion">
+                    <label> 2 </label>
+                    <label><input type="radio" name="respuestas" onfocus="opcionFocus()"></label>
+                </div>
+
+                <div class="opcion">
+                    <label> .75 </label>
+                    <label><input type="radio" name="respuestas" onfocus="opcionFocus()"></label>
+                </div>
+
+            </form>
+
+        </div>
+
+        <input type="button" value="REVISAR" class="boton-revisar" id="boton-revisar" onclick="revisar()">
+        `;
+
+        break;
+
+        case 8: contenido = `
+                     
+        <h1>Pregunta 8/10</h1>
+        <hr>
+        <h2>¿Cuál es la variable independiente de la siguiente ecuación?</h2>
+
+        <div id="pregunta">
+        
+            <div class="imagen"><img src="../../imagenes/ejercicios/TEMA1/1_8_Problema.png" class="img"></div>
+            <form>
+
+                <div class="opcion">
+                    <label> y + 2 </label>
+                    <label><input type="radio" name="respuestas" onfocus="opcionFocus()"></label>
+                </div>
+
+                <div class="opcion">
+                    <label> y </label>
+                    <label><input type="radio" name="respuestas" onfocus="opcionFocus()" id="correcta"></label>
+                </div>
+
+                <div class="opcion">
+                    <label> x </label>
+                    <label><input type="radio" name="respuestas" onfocus="opcionFocus()"></label>
+                </div>
+
+                <div class="opcion">
+                    <label> − y </label>
+                    <label><input type="radio" name="respuestas" onfocus="opcionFocus()"></label>
+                </div>
+
+            </form>
+
+        </div>
+
+        <input type="button" value="REVISAR" class="boton-revisar" id="boton-revisar" onclick="revisar()">
+        `;
+
+        break;
+
+        case 9: contenido = `
+                     
+        <h1>Pregunta 9/10</h1>
+        <hr>
+        <h2>¿Cuál es la constante arbitraria de la siguiente ecuación?</h2>
+
+        <div id="pregunta">
+        
+            <div class="imagen"><img src="../../imagenes/ejercicios/TEMA1/1_9_Problema.png" class="img"></div>
+            <form>
+
+                <div class="opcion">
+                    <label> 7 </label>
+                    <label><input type="radio" name="respuestas" onfocus="opcionFocus()"></label>
+                </div>
+
+                <div class="opcion">
+                    <label> 7/8 </label>
+                    <label><input type="radio" name="respuestas" onfocus="opcionFocus()"></label>
+                </div>
+
+                <div class="opcion">
+                    <label> 2𝝅 </label>
+                    <label><input type="radio" name="respuestas" onfocus="opcionFocus()"></label>
+                </div>
+
+                <div class="opcion">
+                    <label> − 7/8 </label>
+                    <label><input type="radio" name="respuestas" onfocus="opcionFocus()" id="correcta"></label>
+                </div>
+
+            </form>
+
+        </div>
+
+        <input type="button" value="REVISAR" class="boton-revisar" id="boton-revisar" onclick="revisar()">
+        `;
+
+        break;
+
+        case 10: contenido = `
+                     
+        <h1>Pregunta 10/10</h1>
+        <hr>
+        <h2>¿Cuál es la constante absoluta de la siguiente ecuación?</h2>
+
+        <div id="pregunta">
+        
+            <div class="imagen"><img src="../../imagenes/ejercicios/TEMA1/1_10_Problema.png" class="img"></div>
+            <form>
+
+                <div class="opcion">
+                    <label> c </label>
+                    <label><input type="radio" name="respuestas" onfocus="opcionFocus()" id="correcta"></label>
+                </div>
+
+                <div class="opcion">
+                    <label> E </label>
+                    <label><input type="radio" name="respuestas" onfocus="opcionFocus()"></label>
+                </div>
+
+                <div class="opcion">
+                    <label> c<sup>2</sup> </label>
+                    <label><input type="radio" name="respuestas" onfocus="opcionFocus()"></label>
+                </div>
+
+                <div class="opcion">
+                    <label> m </label>
+                    <label><input type="radio" name="respuestas" onfocus="opcionFocus()"></label>
+                </div>
+
+            </form>
+
+        </div>
+
+        <input type="button" value="REVISAR" class="boton-revisar" id="boton-revisar" onclick="revisar()">
+        `;
+
+        break;
+
+        case 11: 
         
         if(aciertos > 5){
             
@@ -286,7 +449,10 @@ function siguiente(){
 
     }
 
-    document.getElementById("contenedor").innerHTML = contenido;
+    setTimeout(function(){
+        document.getElementById("contenedor").innerHTML = contenido;
+    }, 500);
+    
 }
 
 function opcionFocus(){
@@ -311,4 +477,16 @@ function efectoBoton(){
     setTimeout(function(){
         boton.classList.remove("boton-revisar-click");
     },150);
+}
+
+function efectoDesaparecer(){
+
+    let contenedor = document.getElementById("contenedor");
+
+    contenedor.classList.add("objetos-desaparecidos");
+
+    setTimeout(function(){
+        contenedor.classList.remove("objetos-desaparecidos");
+    },550)
+
 }

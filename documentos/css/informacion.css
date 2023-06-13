@@ -78,12 +78,35 @@ section{
 
 .informacion-contenedor h3{
     color: #5D76A9;
-    margin-top: 5px;
+    margin-top: 15px;
     margin-bottom: 5px;
     margin-left: 10px;
     font-size: 18px;
 }
 
+.informacion-contenedor p{
+    margin-top: 5px;
+}
+
+.informacion-contenedor ul{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+ul li {
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 5px;
+  }
+
+ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #5D76A9;
+  }
+
+/*BOTNES DE LA PARTE INFERIOR*/
 
 .botones{
     height: 12%;
@@ -95,10 +118,18 @@ section{
     justify-content: space-between;
 }
 
-input{
+.botones > input{
+    background-color: #0066b2;
+    border: none;
+    color: white;
+    font-weight: bold;
     height: 80%;
     width: 100px;
     border-radius: 10px;
+}
+
+.botones > input:hover{
+    border: 2px solid #002D62;
 }
 
 .boton-regresar{
