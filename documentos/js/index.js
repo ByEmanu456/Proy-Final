@@ -92,7 +92,7 @@ var radios_panel3 = `
 
     <hr class="nivel-barra" id="barra14">
 
-    <div class="nivel-contenedor" id="nivel2">
+    <div class="nivel-contenedor" id="nivel12">
         <label>12</label>
         <label><input type="radio" name="usuario" id="radio12" onfocus="radio12focus()"></label>
     </div>
@@ -153,7 +153,7 @@ function panelActual(){
     }
 
     else if(n_panel == 2){
-        document.getElementById("titulo").innerHTML = '<div class="titulo-nombre"><h1>Limites</h1></div><div class="titulo-numero"><h1>3</h1></div>'
+        document.getElementById("titulo").innerHTML = '<div class="titulo-nombre"><h1>Límites</h1></div><div class="titulo-numero"><h1>3</h1></div>'
         document.getElementById("niveles").innerHTML = radios_panel3;
     }
 
@@ -281,7 +281,7 @@ function radio7focus(){
         <p>Toma lapiz y pluma para resolver los siguientes ejercicios, no te preocupes, tambien te proporcionaremos las respuestas pero preaparate ya que la siguiente actividad es un test y tienes que aprobar para avanzar! </p> <br>
     </div>`;
 
-    document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='#'"></input> `;
+    document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='2-ejercicios.html'"></input> `;
 
     var contenedor = document.getElementById("nivel7");
     radioSelec(contenedor);
@@ -298,7 +298,7 @@ function radio8focus(){
         <p>Resuelve el siguiente test para poder continuar, puedes tomarte el tiempo que necesites. Obten almenos un 6 de califiación para poder continuar!</p> <br>
     </div>`;
 
-    document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='#'"></input> `;
+    document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='2-test.html'"></input> `;
 
     var contenedor = document.getElementById("nivel8");
     radioSelec(contenedor);
@@ -335,7 +335,7 @@ function radio10focus(){
         <p>En estos documentos podras leer mas infomracion</p> <br>
     </div>`;
 
-    document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='#'"></input> `;
+    document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='3-informacion.html'"></input> `;
 
     var contenedor = document.getElementById("nivel10");
     radioSelec(contenedor);
@@ -352,7 +352,7 @@ function radio11focus(){
         <p>Toma lapiz y pluma para resolver los siguientes ejercicios, no te preocupes, tambien te proporcionaremos las respuestas pero preaparate ya que la siguiente actividad es un test y tienes que aprobar para avanzar! </p> <br>
     </div>`;
 
-    document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='#'"></input> `;
+    document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='3-ejercicios.html'"></input> `;
 
     var contenedor = document.getElementById("nivel11");
     radioSelec(contenedor);
@@ -369,7 +369,7 @@ function radio12focus(){
         <p>Resuelve el siguiente test para poder continuar, puedes tomarte el tiempo que necesites. Obten almenos un 6 de califiación para poder continuar!</p> <br>
     </div>`;
 
-    document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='#'"></input> `;
+    document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='3-test.html'"></input> `;
 
     var contenedor = document.getElementById("nivel12");
     radioSelec(contenedor);
@@ -490,6 +490,7 @@ function avanzar(){
 function radioSelec(contenedor){
 
     var contenedores = document.getElementsByClassName("nivel-contenedor");
+    console.log(contenedores)
 
     for(var i=0; i < contenedores.length; i++){
         if(contenedores[i].classList.contains("nivel-seleccionado")){
@@ -510,7 +511,7 @@ function efectoDesaparecer(){
     let panelNiveles = document.getElementById("niveles");
 
     boton1.disabled = true;
-    boton2.disabled = true;
+    boton2.disabled = true; 
 
     panelTitulo.classList.add("panel-objetos-desaparecidos");
     panelNiveles.classList.add("objeto-desaparecido");
