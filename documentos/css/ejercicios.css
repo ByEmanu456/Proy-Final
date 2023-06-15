@@ -23,7 +23,7 @@ body{
     flex-direction: column;
 }
 
-body:before{
+body::before{
     content: "";
     width: 100%;
     min-height: 100vh;
@@ -103,7 +103,6 @@ section{
 .ejercicios-img{
     align-self: center;
     margin-top: 20px;
-    margin-bottom: 10px;
 
     display: flex;
     align-items: center;
@@ -122,8 +121,7 @@ section{
 .imagen-texto{
     width: 100%;
     text-align: center;
-    color: #ffffff;
-    text-shadow: 2px 2px 4px #00000080;
+    color: #002244;
     font-weight: 900;
     font-size: 30px;
     opacity: 0;
@@ -157,7 +155,7 @@ section{
 }
 
 
-/*BOTNES DE LA PARTE INFERIOR*/
+/*BOTONES INFERIORES*/
 
 .botones{
     height: 12%;
@@ -169,18 +167,10 @@ section{
     justify-content: space-between;
 }
 
-.botones > input{
-    background-color: #0066b2;
-    border: none;
-    color: white;
-    font-weight: bold;
+.botones input{
     height: 80%;
     width: 100px;
     border-radius: 10px;
-}
-
-.botones > input:hover{
-    border: 2px solid #002D62;
 }
 
 .boton-regresar{
@@ -191,4 +181,7 @@ section{
     float: left;
     margin-right: 20px;
 }
+
+
+/*EFECTOS*/
 

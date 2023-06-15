@@ -1,4 +1,4 @@
-var nivel = 14;
+var nivel = 9;
 var califExam1 = 9;
 var califExam2 = 9;
 var califExam3 = 0;

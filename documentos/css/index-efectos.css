@@ -33,10 +33,6 @@
     border: 3px solid #bb9900;
 }
 
-.nivel-corona:hover{
-    border: 1px solid #555b5f;
-}
-
 /* EFECTO AL SELECCIONAR UN NIVEL */
 
 .nivel-seleccionado{

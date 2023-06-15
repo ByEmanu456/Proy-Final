@@ -68,10 +68,9 @@ marquee p a:hover{
 .menu-nav{
     width: 150%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-left: 20px;
-    z-index: 1;
 }
 
 .menu-nav a{

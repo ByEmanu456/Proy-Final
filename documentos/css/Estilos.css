@@ -1,0 +1,117 @@
+/*Estilos del DOCUMENTO*/
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+
+    background: rgb(65,58,180);
+    background: linear-gradient(90deg, rgba(65,58,180,1) 0%, rgba(29,156,253,1) 42%, rgba(69,252,212,1) 100%);
+}
+
+/*Estilos del FORMULARIO*/
+
+.formulario {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f5deb3;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.formulario2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f5deb3;
+    width: 500px;
+    height: 600px;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+
+.logo {
+    display: grid;
+    place-items: center center;
+}
+
+h1 {
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid #aa9a7d;
+}
+
+form{
+    padding-left: 0 0 40px 0;
+    box-sizing: border-box;
+}
+
+/*Estilos de las ENTRADAS DE DATOS (cajas de texto, fecha, numbres, etc.)*/
+
+form .entrada {
+    position: relative;
+    border-bottom: 3px solid #766b56;
+    margin: 30px;
+}
+
+.entrada input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+/*Estilos de las ENTRADAS DE DATOS (CheckBox, Radios, Selects, etc.)*/
+
+form .entrada2{
+    display: grid;
+    place-items: center center;
+    text-align: center;
+    height: 55px;
+    margin: 30px;
+    background-color: #aa9a7d;
+    border-radius: 10px;
+}
+
+/*Estilos de los VINCULOS*/
+
+.vinculos{
+    text-align: center;
+    margin: -5px 0 20px 5px;
+}
+
+.vinculos a {
+    text-decoration: none;
+    color: #deb887;
+}
+
+.vinculos a:hover{
+    text-decoration: underline;
+    color: #8c7659;
+}
+
+/*Estilos de los BOTONES*/
+
+.contenedorBtn{
+    display: grid;
+    place-items: center center;
+    margin: 10px;
+}
+
+.boton{
+    width: 80%;
+    height: 50px;
+    border: 1px solid;
+    background: #766b56;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #deb887;
+    cursor: pointer;
+    outline: none;
+}
