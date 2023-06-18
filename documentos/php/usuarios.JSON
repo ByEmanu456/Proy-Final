@@ -74,10 +74,10 @@
         "especialidad": "Alimentos y bebidas",
         "contrasena": "123ABCDe",
         "progreso": {
-            "0": true,
-            "1": true,
-            "2": true,
-            "3": true,
+            "0": false,
+            "1": false,
+            "2": false,
+            "3": false,
             "4": false,
             "5": false,
             "6": false,
@@ -92,7 +92,7 @@
             "15": false
         },
         "examenes": {
-            "0": 10,
+            "0": 0,
             "1": 0,
             "2": 0,
             "3": 0
