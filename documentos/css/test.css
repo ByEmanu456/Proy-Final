@@ -66,10 +66,6 @@ section{
     flex-direction: column;
 }
 
-.test-contenedor  * {
-    transition: opacity .5s;
-}
-
 .test-contenedor h1{
     color: #2c3968;
     text-align: center;
@@ -123,12 +119,6 @@ section{
     position: relative;
 }
 
-.opcion > label{
-    font-size: 30px;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px #00000080;;
-}
-
 .opcion label:last-child{
     position: absolute;
     height: 100%;
@@ -139,7 +129,6 @@ section{
 
 .boton-revisar{
     border: none;
-    border-radius: 10px;
     background-color: #002D62;
     color: white;
     font-size: 20px;
@@ -193,13 +182,14 @@ h2{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     width: calc(100% - 300px);
     float: right;
-}
+}   
+
+/* BOTONES INFERIORES */
 
 .test-contenedor hr{
     margin-bottom: 10px;
 }
 
-/*BOTNES DE LA PARTE INFERIOR*/
 
 .botones{
     height: 12%;
@@ -211,18 +201,10 @@ h2{
     justify-content: space-between;
 }
 
-.botones > input{
-    background-color: #0066b2;
-    border: none;
-    color: white;
-    font-weight: bold;
+input{
     height: 80%;
     width: 100px;
     border-radius: 10px;
-}
-
-.botones > input:hover{
-    border: 2px solid #002D62;
 }
 
 .boton-regresar{
@@ -233,6 +215,5 @@ h2{
     float: left;
     margin-right: 20px;
 }
-
 
 
