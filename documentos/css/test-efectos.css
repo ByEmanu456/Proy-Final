@@ -1,3 +1,4 @@
+
 .boton-revisar:hover{
     background-color: #024188;
 }
@@ -13,7 +14,7 @@
 .opcion-seleccionda{
     background-color: #72A0C1;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
-    transition-duration: .5s;
+    transition: .5s;
 }
 
 .opcion-seleccionda:hover{
@@ -63,4 +64,20 @@
 .aciertos-resultado-desaprobado{
     color: #CC0000;
     font-size: 50px;
+}
+
+.objetos-desaparecidos > #pregunta > *{
+    opacity: 0;
+}
+
+.objetos-desaparecidos > input {
+    opacity: 0;
+}
+
+.objetos-desaparecidos > h2{
+    opacity: 0;
+}
+
+.objetos-desaparecidos > div{
+    opacity: 0;
 }
