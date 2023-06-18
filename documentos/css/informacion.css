@@ -61,6 +61,20 @@ section{
     overflow-y: scroll; 
 }
 
+.informacion-contenedor > div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.informacion-contenedor img{
+    border: 3px solid #0066b2;
+    border-radius: 10px;
+}
+
 .informacion-contenedor h1{
     color: #2c3968;
     text-align: center;

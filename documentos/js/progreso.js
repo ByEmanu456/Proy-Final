@@ -1,13 +1,28 @@
-var userNivel = pasarNivel();
-var calificiones = [pasarTest1(),pasarTest2(),pasarTest3(),pasarTest4()];
-var n_panel = Math.floor((userNivel - 1 ) / 4);
 
-window.onload = function() { 
+var userNivel;
+var calificiones;
+var n_panel;
+
+
+function cargarIndex(){
+
+  userNivel =  pasarNivel();
+  calificiones = [pasarTest1(),pasarTest2(),pasarTest3(),pasarTest4()];
+  n_panel = Math.floor((userNivel - 1 ) / 4);
+  console.log(userNivel);
+
   panelActual();
-  verifiProgreso(); 
+  verifiProgreso();
 
-  document.getElementsByClassName('nivel-actual')[0].lastElementChild.firstElementChild.focus();
-};
+  if(userNivel == 17){
+    console.log("Curso completado");
+  }
+
+  else{
+    document.getElementsByClassName('nivel-actual')[0].lastElementChild.firstElementChild.focus();
+  }
+
+}
   
 function verifiProgreso() {
 

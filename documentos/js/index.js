@@ -406,7 +406,7 @@ function radio14focus(){
         <p>En estos documentos podras leer mas infomracion</p> <br>
     </div>`;
 
-    document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='#'"></input> `;
+    document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='4-informacion.html'"></input> `;
 
     var contenedor = document.getElementById("nivel14");
     radioSelec(contenedor);
@@ -423,7 +423,7 @@ function radio15focus(){
         <p>Toma lapiz y pluma para resolver los siguientes ejercicios, no te preocupes, tambien te proporcionaremos las respuestas pero preaparate ya que la siguiente actividad es un test y tienes que aprobar para avanzar! </p> <br>
     </div>`;
 
-    document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='#'"></input> `;
+    document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='4-ejercicios.html'"></input> `;
 
     var contenedor = document.getElementById("nivel15");
     radioSelec(contenedor);
@@ -440,7 +440,7 @@ function radio16focus(){
         <p>Resuelve el siguiente test para poder continuar, puedes tomarte el tiempo que necesites. Obten almenos un 6 de califiación para poder continuar!</p> <br>
     </div>`;
 
-    document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='#'"></input> `;
+    document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='4-test.html'"></input> `;
 
     var contenedor = document.getElementById("nivel16");
     radioSelec(contenedor);
@@ -490,7 +490,6 @@ function avanzar(){
 function radioSelec(contenedor){
 
     var contenedores = document.getElementsByClassName("nivel-contenedor");
-    console.log(contenedores)
 
     for(var i=0; i < contenedores.length; i++){
         if(contenedores[i].classList.contains("nivel-seleccionado")){

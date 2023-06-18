@@ -1,10 +1,7 @@
 var nomUsuario;
 var objUsuarioSelec;
-var califExam1;
-var califExam2;
-var califExam3;
-var califExam4;
-var nivel = 1;
+
+var datosUsuario = [];
 
 const randomNumber = Math.random();
 const url = `../php/selectedUser.txt?random=${randomNumber}`;
@@ -36,22 +33,19 @@ function leerJSON(){
 
         }
 
-        let nivelesComp = objUsuarioSelec.progreso;
+        datosUsuario = [        
+            objUsuarioSelec.nombre, 
+            objUsuarioSelec.apellidos, 
+            objUsuarioSelec.fecha_nacimiento, 
+            objUsuarioSelec.genero, 
+            objUsuarioSelec.semestre, 
+            objUsuarioSelec.especialidad,
+            objUsuarioSelec.contrasena
+        ];
 
-        for(var i = 0; i < 16; i++){
-            if(nivelesComp[i] == true){
-                nivel++;
-            }
-        }
+        console.log(datosUsuario);
 
-        let calificiones = objUsuarioSelec.examenes;
-
-        califExam1 = calificiones[0];
-        califExam2 = calificiones[1];
-        califExam3 = calificiones[2];
-        califExam4 = calificiones[3];
-
-        cargarIndex();
+        rellenarTabla();
 
     })
 
@@ -61,23 +55,10 @@ function leerJSON(){
 
 }
 
-function pasarNivel() {
-    return nivel;
-}
+function rellenarTabla(){
+    for(var i = 0; i < datosUsuario.length; i++){
 
-function pasarTest1() {
-    return califExam1; 
-}
+        document.getElementById("dato" + i).innerHTML = datosUsuario[i];
 
-function pasarTest2() {
-    return califExam2; 
+    }
 }
-
-function pasarTest3() {
-    return califExam3; 
-}
-
-function pasarTest4() {
-    return califExam4; 
-}
-

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/menu-nav.css">
+    <link rel="stylesheet" href="../css/miProgreso.css">
+    <script src="../js/miProgreso.js"></script>
+</head>
+<body>
+
+    <!--BARRA DE MENÚ-->
+
+    <header class="menu">
+        <a href="index.html" class="logo">
+            <img src="../../imagenes/ICONOS/favicon2.png" class="logo-favicon">
+            <span class="logo-eco">Eco</span>
+            <span class="logo-byte">Byte</span>
+        </a>
+
+        <marquee>
+            <p>| EcoByte: Curso gratis y online de calculo difrencial | <a href="index.html">| ¿Ya conoces nuestro producto ecológico? Conocelo y da click aquí |</a></p>
+        </marquee>
+        
+        <nav class="menu-nav">
+            <a href="#">¿Quienes somos?</a>
+            <a href="#">Mi progreso</a>
+            <a href="miCuenta.html" id="cuenta">Mi Cuenta</a>
+        </nav>
+    </header>
+
+    <!--PANEL DE INFORMACIÓN DEL USUARIO-->
+
+    <section>
+
+        <div class="progreso-panel">
+
+            <div class="progreso-titulo"><h1>Progreso del curso</h1></div>
+
+            <div class="progreso-contenedor">
+
+                <meter min="0" max="100" value="30"></meter>
+                
+            </div>
+            <div class="botones">
+                <input type="button" class="boton-regresar" value="Cerrar Sesión" onclick="location.href='InicioSesion.html'">
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>

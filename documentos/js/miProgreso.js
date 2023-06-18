@@ -19,7 +19,10 @@ fetch(url)
 
 function leerJSON(){
 
-    fetch('../php/usuarios.JSON')
+    const randomNumber = Math.random();
+    const url = `../php/usuarios.JSON?random=${randomNumber}`;
+
+    fetch(url)
     .then(response => response.json())
     .then(data => {
 
@@ -50,8 +53,6 @@ function leerJSON(){
         califExam2 = calificiones[1];
         califExam3 = calificiones[2];
         califExam4 = calificiones[3];
-
-        cargarIndex();
 
     })
 
