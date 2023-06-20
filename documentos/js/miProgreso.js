@@ -1,13 +1,12 @@
 var nomUsuario;
 var objUsuarioSelec;
-var califExam1;
-var califExam2;
-var califExam3;
-var califExam4;
-var nivel = 1;
 
-const randomNumber = Math.random();
-const url = `../php/selectedUser.txt?random=${randomNumber}`;
+var nivelesComp;
+var calificaciones;
+var nivel = 0;
+
+let randomNumber = Math.random();
+let url = `../php/selectedUser.txt?random=${randomNumber}`;
 
 fetch(url)
 .then(response => response.text())
@@ -19,8 +18,8 @@ fetch(url)
 
 function leerJSON(){
 
-    const randomNumber = Math.random();
-    const url = `../php/usuarios.JSON?random=${randomNumber}`;
+    let randomNumber = Math.random();
+    let url = `../php/usuarios.JSON?random=${randomNumber}`;
 
     fetch(url)
     .then(response => response.json())
@@ -39,7 +38,9 @@ function leerJSON(){
 
         }
 
-        let nivelesComp = objUsuarioSelec.progreso;
+        nivelesComp = objUsuarioSelec.progreso;
+
+        console.log(nivelesComp);
 
         for(var i = 0; i < 16; i++){
             if(nivelesComp[i] == true){
@@ -47,12 +48,11 @@ function leerJSON(){
             }
         }
 
-        let calificiones = objUsuarioSelec.examenes;
+        calificaciones = objUsuarioSelec.examenes;
 
-        califExam1 = calificiones[0];
-        califExam2 = calificiones[1];
-        califExam3 = calificiones[2];
-        califExam4 = calificiones[3];
+        console.log(calificaciones);
+
+        rellenarTabla();
 
     })
 
@@ -62,23 +62,64 @@ function leerJSON(){
 
 }
 
-function pasarNivel() {
-    return nivel;
-}
+function rellenarTabla(){
 
-function pasarTest1() {
-    return califExam1; 
-}
+    for(var i=0; i<16; i++){
 
-function pasarTest2() {
-    return califExam2; 
-}
+        let celdaTabla = document.getElementById("dato" + i);
 
-function pasarTest3() {
-    return califExam3; 
-}
+        if(nivelesComp[i] == true){
+            
+            if(celdaTabla.id === 'dato0' || celdaTabla.id === 'dato4' || celdaTabla.id === 'dato8' || celdaTabla.id === 'dato12'){
+                celdaTabla.innerHTML = "Visto"
+            }
 
-function pasarTest4() {
-    return califExam4; 
-}
+            else if(celdaTabla.id === 'dato1' || celdaTabla.id === 'dato5' || celdaTabla.id === 'dato9' || celdaTabla.id === 'dato13'){
+                celdaTabla.innerHTML = "Leído"
+            }
 
+            else if(celdaTabla.id === 'dato2' || celdaTabla.id === 'dato6' || celdaTabla.id === 'dato10' || celdaTabla.id === 'dato14'){
+                celdaTabla.innerHTML = "Resuleto"
+            }
+
+            else if(celdaTabla.id === 'dato3'){
+                celdaTabla.innerHTML = calificaciones[0] + " de califiación";
+            }
+
+            else if(celdaTabla.id === 'dato7' ){
+                celdaTabla.innerHTML = calificaciones[1] + " de califiación";
+            }
+
+            else if(celdaTabla.id === 'dato11' ){
+                celdaTabla.innerHTML = calificaciones[2] + " de califiación";
+            }
+
+            else if(celdaTabla.id === 'dato15'){
+                celdaTabla.innerHTML = calificaciones[3] + " de califiación";
+            }
+        }
+
+        else{
+            
+            if(celdaTabla.id === 'dato0' || celdaTabla.id === 'dato4' || celdaTabla.id === 'dato8' || celdaTabla.id === 'dato12'){
+                celdaTabla.innerHTML = "Sin ver"
+            }
+
+            else if(celdaTabla.id === 'dato1' || celdaTabla.id === 'dato5' || celdaTabla.id === 'dato9' || celdaTabla.id === 'dato13'){
+                celdaTabla.innerHTML = "Sin leer"
+            }
+
+            else if(celdaTabla.id === 'dato2' || celdaTabla.id === 'dato6' || celdaTabla.id === 'dato10' || celdaTabla.id === 'dato14'){
+                celdaTabla.innerHTML = "Sin resolver"
+            }
+
+            else if(celdaTabla.id === 'dato3' || celdaTabla.id === 'dato7' || celdaTabla.id === 'dato11' || celdaTabla.id === 'dato15'){
+                celdaTabla.innerHTML = "Sin contestar";
+            }
+        }
+    }
+
+    document.getElementById("nivel").innerHTML = "Niveles completados: " + nivel + " de 16";
+    document.getElementById("barra").value = nivel;
+    
+}

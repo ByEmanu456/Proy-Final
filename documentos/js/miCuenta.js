@@ -3,8 +3,8 @@ var objUsuarioSelec;
 
 var datosUsuario = [];
 
-const randomNumber = Math.random();
-const url = `../php/selectedUser.txt?random=${randomNumber}`;
+let randomNumber = Math.random();
+let url = `../php/selectedUser.txt?random=${randomNumber}`;
 
 fetch(url)
 .then(response => response.text())
@@ -16,7 +16,10 @@ fetch(url)
 
 function leerJSON(){
 
-    fetch('../php/usuarios.JSON')
+    let randomNumber = Math.random();
+    let url = `../php/usuarios.JSON?random=${randomNumber}`;
+
+    fetch(url)
     .then(response => response.json())
     .then(data => {
 
@@ -32,6 +35,8 @@ function leerJSON(){
             }
 
         }
+
+        console.log(objUsuarioSelec);
 
         datosUsuario = [        
             objUsuarioSelec.nombre, 

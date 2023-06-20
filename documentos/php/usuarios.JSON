@@ -97,5 +97,71 @@
             "2": 0,
             "3": 0
         }
+    },
+    "3": {
+        "nombre": "Miranda",
+        "apellidos": "Gonzalez Hernandez",
+        "fecha_nacimiento": "2006-12-09",
+        "genero": "[object NodeList]",
+        "semestre": "4",
+        "especialidad": "Programación",
+        "contrasena": "Tontita24",
+        "progreso": {
+            "0": false,
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false,
+            "5": false,
+            "6": false,
+            "7": false,
+            "8": false,
+            "9": false,
+            "10": false,
+            "11": false,
+            "12": false,
+            "13": false,
+            "14": false,
+            "15": false
+        },
+        "examenes": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0
+        }
+    },
+    "4": {
+        "nombre": "ALAN",
+        "apellidos": "EN 4 BB",
+        "fecha_nacimiento": "2001-09-11",
+        "genero": "[object NodeList]",
+        "semestre": "6",
+        "especialidad": "Alimentos y bebidas",
+        "contrasena": "AmoAEmanuel69",
+        "progreso": {
+            "0": false,
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false,
+            "5": false,
+            "6": false,
+            "7": false,
+            "8": false,
+            "9": false,
+            "10": false,
+            "11": false,
+            "12": false,
+            "13": false,
+            "14": false,
+            "15": false
+        },
+        "examenes": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0
+        }
     }
 }

@@ -25,17 +25,16 @@ body{
     flex-direction: column;
 }
 
-body::before{
+body:before{
     content: "";
     width: 100%;
     min-height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(90deg, rgb(8, 8, 8) 0%, rgb(81, 81, 81) 42%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(180deg, rgb(8, 8, 8) 0%, rgb(49, 49, 49) 42%, rgba(78, 78, 78, 0) 100%);
     opacity: 0.5;
     z-index: -1;
-
 }
 
 /*Sección del video*/
@@ -51,11 +50,12 @@ section{
 
 .progreso-panel{
     height: 85%;
-    width: 500px;
+    width: 800px;
     background-color: white;
     border-radius: 20px;
 
     position: relative;
+
 }
 
 .progreso-titulo{
@@ -81,13 +81,66 @@ section{
     
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
+.progreso-contenedor h1{
+    margin-top: 20px;
+    color: #0077c0;
+}
 
 meter{
+    
     height: 15%;
     width: 90%;
+}
+
+.tabla{ 
+    height: 70%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.tabla th{
+    width: 150px;
+    text-align: center;
+    background-color: #6699CC;
+    font-weight: bold;
+}
+
+.tabla td{
+    height: 60px;
+    text-align: center;
+    background-color: #B9D9EB;
+    border-bottom: 1px solid #002244;
+}
+
+.tabla tr td:first-child{
+    font-weight: bold;
+    background-color: #B0C4DE;
+}
+
+.tabla tr:last-child td{
+    border-bottom: none;
+}
+
+.tabla tr:first-child th:first-child{
+    border-top-left-radius: 10px;
+}
+
+.tabla tr:first-child th:last-child{
+    border-top-right-radius: 10px;
+}
+
+.tabla tr:last-child td:first-child{
+    border-bottom-left-radius: 10px;
+
+}
+
+.tabla tr:last-child td:last-child{
+    border-bottom-right-radius: 10px;
+
 }
 
 
