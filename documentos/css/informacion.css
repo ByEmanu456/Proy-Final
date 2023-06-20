@@ -111,14 +111,23 @@ ul li {
     padding-left: 20px;
     position: relative;
     margin-bottom: 5px;
-  }
+}
 
 ul li::before {
     content: "•";
     position: absolute;
     left: 0;
     color: #5D76A9;
-  }
+}
+
+.audio-contenedor p{
+    margin-top: 0px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.audio-contenedor audio{
+    margin-left: 5px;
+}
 
 /*BOTNES DE LA PARTE INFERIOR*/
 

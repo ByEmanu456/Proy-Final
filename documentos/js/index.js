@@ -167,13 +167,13 @@ function panelActual(){
 //RADIOS DEL TEMA 1
 
 function radio1focus(){
-    document.getElementById("info_titulo").innerHTML = '<h4>1. Video Explicativo</h4>'
+    document.getElementById("info_titulo").innerHTML = '<h4>1.1 Video Explicativo</h4>'
     document.getElementById("info").innerHTML = `
     
     <div>
-        <h1>VIDEO 1</h1> <br>
-        <p>Ve este video y aprende ¿Que son? ¿Como identificarlas? ¿Qué tipos hay?, entre otras cosas que van a serte de utilidad en proximas clases, pon atención porque despues tu harás los ejecicios.</p> <br>
-        <p>Autor:</p>
+        <h1>VIDEO</h1> <br>
+        <p>En este video podrás aprender sobre, ¿Qué son las constantes y las variables? ¿Qué tipos hay? y algunos ejemplos de las mismas, es necesario que pongas atención, pues en futuras clases tendrás que hacer ejercicios.</p><br>
+        <p>Autor: Angel Caled Veneroso Vela</p>
     </div>`;
 
     document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='1-video.html'"></input> `;
@@ -185,12 +185,12 @@ function radio1focus(){
 };
 
 function radio2focus(){
-    document.getElementById("info_titulo").innerHTML = '<h4>2. Documento de conceptos</h4>'
+    document.getElementById("info_titulo").innerHTML = '<h4>1.2 Documento de conceptos</h4>'
     document.getElementById("info").innerHTML = `
     
     <div>
-        <h1>INFORMACIÓN 1</h1> <br>
-        <p>En estos documentos podras leer mas infomracion</p> <br>
+        <h1>INFORMACIÓN</h1> <br>
+        <p>¿No fué suficiente con el video? Accede a más información acerca de las variables y constantes para que conozcas aún más sobre el tema, procura leer todo el archivo antes de terminar la actividad, te será de utilidad para que hagas los ejercicios</p> <br>
     </div>`;
 
     document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='1-informacion.html'"></input> `;
@@ -202,12 +202,12 @@ function radio2focus(){
 };
 
 function radio3focus(){
-    document.getElementById("info_titulo").innerHTML = '<h4>3. Ejercicios de practica</h4>'
+    document.getElementById("info_titulo").innerHTML = '<h4>1.3 Ejercicios de práctica</h4>'
     document.getElementById("info").innerHTML = `
     
     <div>
-        <h1>EJERCICIOS 1</h1> <br>
-        <p>Toma lapiz y pluma para resolver los siguientes ejercicios, no te preocupes, tambien te proporcionaremos las respuestas pero preaparate ya que la siguiente actividad es un test y tienes que aprobar para avanzar! </p> <br>
+        <h1>EJERCICIOS</h1> <br>
+        <p>Para estos ejercicios no necesitas más que pensar un poco e identificar lo que se te pide, no te preocupes, te proporcionaremos las respuestas pero preaparate ya que la siguiente actividad es un test y tienes que aprobar para avanzar! </p> <br>
     </div>`;
 
     document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='1-ejercicios.html'"></input> `;
@@ -219,12 +219,12 @@ function radio3focus(){
 };
 
 function radio4focus(){
-    document.getElementById("info_titulo").innerHTML = '<h4>4. Examen</h4>'
+    document.getElementById("info_titulo").innerHTML = '<h4>1.4 Examen evaluativo</h4>'
     document.getElementById("info").innerHTML = `
     
     <div>
-        <h1>TEST 1</h1> <br>
-        <p>Resuelve el siguiente test para poder continuar, puedes tomarte el tiempo que necesites. Obten almenos un 6 de califiación para poder continuar!</p> <br>
+        <h1>TEST</h1> <br>
+        <p>Identifica lo que se te pide en el siguiente examen, escoje una de las 4 posibles respuestas, puedes tomarte el tiempo que necesites. Obten almenos un 6 de califiación para poder continuar!</p> <br>
     </div>`;
 
     document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='1-test.html'"></input> `;
@@ -238,13 +238,13 @@ function radio4focus(){
 //RADIOS DEL TEMA 2
 
 function radio5focus(){
-    document.getElementById("info_titulo").innerHTML = '<h4>Video Explicativo</h4>';
+    document.getElementById("info_titulo").innerHTML = '<h4>2.1 Video Explicativo</h4>';
     document.getElementById("info").innerHTML = `
     
     <div>
-        <h1>VIDEO 2</h1> <br>
-        <p>Ve este video y aprende ¿Que son? ¿Como identificarlas? ¿Qué tipos hay?, entre otras cosas que van a serte de utilidad en proximas clases, pon atención porque despues tu harás los ejecicios.</p> <br>
-        <p>Autor:</p>
+        <h1>VIDEO</h1> <br>
+        <p>Ve el siguiente video y aprende ¿Qué es una función? ¿Qué caracteristicas tiene? ¿Cómo se comportan? ¿Qué tipos hay? y otras cosas sobre las mismas, proximamante te enseñaremos a evaluar funciones.</p> <br>
+        <p>Autor: José Francisco Saavedra Oloarte</p>
     </div>`;
 
     document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='2-video.html'"></input> `;
@@ -256,12 +256,12 @@ function radio5focus(){
 };
 
 function radio6focus(){
-    document.getElementById("info_titulo").innerHTML = '<h4>DOCUMENTOS</h4>'
+    document.getElementById("info_titulo").innerHTML = '<h4>2.2 Documento de conceptos</h4>'
     document.getElementById("info").innerHTML = `
     
     <div>
-        <h1>INFORMACIÓN 2</h1> <br>
-        <p>En estos documentos podras leer mas infomracion</p> <br>
+        <h1>INFORMACIÓN</h1> <br>
+        <p>Aquí tienes la información fundamental del video anterior, los conceptos que aquí leerás son imprescindibles para poder entender las funciones y su comportamiento.</p> <br>
     </div>`;
 
     document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='2-informacion.html'"></input> `;
@@ -273,12 +273,12 @@ function radio6focus(){
 };
 
 function radio7focus(){
-    document.getElementById("info_titulo").innerHTML = '<h4>EJERCICIOS</h4>'
+    document.getElementById("info_titulo").innerHTML = '<h4>2.3 Ejercicios de práctica</h4>'
     document.getElementById("info").innerHTML = `
     
     <div>
-        <h1>EJERCICIOS 2</h1> <br>
-        <p>Toma lapiz y pluma para resolver los siguientes ejercicios, no te preocupes, tambien te proporcionaremos las respuestas pero preaparate ya que la siguiente actividad es un test y tienes que aprobar para avanzar! </p> <br>
+        <h1>EJERCICIOS</h1> <br>
+        <p>Toma lapiz o pluma para resolver los siguientes ejercicios sobre evaluar funciones, tambien te proporcionaremos las respuestas y el procedimiento, pero preparate ya que el exámen no será tan fácil como el anterior. </p> <br>
     </div>`;
 
     document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='2-ejercicios.html'"></input> `;
@@ -290,12 +290,12 @@ function radio7focus(){
 };
 
 function radio8focus(){
-    document.getElementById("info_titulo").innerHTML = '<h4>EXAMEN</h4>'
+    document.getElementById("info_titulo").innerHTML = '<h4>2.4 Examen evaluativo</h4>'
     document.getElementById("info").innerHTML = `
     
     <div>
-        <h1>TEST 2</h1> <br>
-        <p>Resuelve el siguiente test para poder continuar, puedes tomarte el tiempo que necesites. Obten almenos un 6 de califiación para poder continuar!</p> <br>
+        <h1>TEST</h1> <br>
+        <p>Resuelve el siguiente test sobre funciones para poder continuar, tomate tu tiempo. Recuerda que tienes que obtener almenos un 6 de califiación para poder continuar!</p> <br>
     </div>`;
 
     document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='2-test.html'"></input> `;
@@ -309,13 +309,13 @@ function radio8focus(){
 //RADIOS DEL TEMA 3
 
 function radio9focus(){
-    document.getElementById("info_titulo").innerHTML = '<h4>VIDEO.MP4</h4>'
+    document.getElementById("info_titulo").innerHTML = '<h4>3.1 Video explicativo</h4>'
     document.getElementById("info").innerHTML = `
     
     <div>
         <h1>VIDEO 3</h1> <br>
-        <p>Ve este video y aprende ¿Que son? ¿Como identificarlas? ¿Qué tipos hay?, entre otras cosas que van a serte de utilidad en proximas clases, pon atención porque despues tu harás los ejecicios.</p> <br>
-        <p>Autor:</p>
+        <p>Observa el video para que puedas entender como evaluar límites, la dificultad va aumentando por lo que los videos son algo mas extensos, aún así debes poner atención para realizar los próximos ejercicios.</p> <br>
+        <p>Autor: Jesús Esteban Zarate Vidaña</p>
     </div>`;
 
     document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='3-video.html'"></input> `;
@@ -327,12 +327,12 @@ function radio9focus(){
 };
 
 function radio10focus(){
-    document.getElementById("info_titulo").innerHTML = '<h4>DOCUMENTOS</h4>'
+    document.getElementById("info_titulo").innerHTML = '<h4>3.2 Documento de conceptos</h4>'
     document.getElementById("info").innerHTML = `
     
     <div>
-        <h1>INFORMACIÓN 3</h1> <br>
-        <p>En estos documentos podras leer mas infomracion</p> <br>
+        <h1>INFORMACIÓN</h1> <br>
+        <p>Entiende con la ayuda de este documento: ¿Qué son los límites? ¿Qué es un límite indefinido? y ¿Qué hacer si encuentras uno?, procuramos hacerlos breves y concisos para que no te aburras.</p> <br>
     </div>`;
 
     document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='3-informacion.html'"></input> `;
@@ -344,12 +344,12 @@ function radio10focus(){
 };
 
 function radio11focus(){
-    document.getElementById("info_titulo").innerHTML = '<h4>EJERCICIOS</h4>'
+    document.getElementById("info_titulo").innerHTML = '<h4>3.3 Ejercicios de práctica</h4>'
     document.getElementById("info").innerHTML = `
     
     <div>
-        <h1>EJERCICIOS 3</h1> <br>
-        <p>Toma lapiz y pluma para resolver los siguientes ejercicios, no te preocupes, tambien te proporcionaremos las respuestas pero preaparate ya que la siguiente actividad es un test y tienes que aprobar para avanzar! </p> <br>
+        <h1>EJERCICIOS</h1> <br>
+        <p>Aquí tendrás que retomar tu lápiz y borrador para evaluar los siguientes límites, el siguiente tema son derivadas, así que presta atención al procedimiento que te proporcionamos de cada ejercicio para que puedas entenderlo a la perfección.</p> <br>
     </div>`;
 
     document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='3-ejercicios.html'"></input> `;
@@ -361,12 +361,12 @@ function radio11focus(){
 };
 
 function radio12focus(){
-    document.getElementById("info_titulo").innerHTML = '<h4>EXAMEN</h4>'
+    document.getElementById("info_titulo").innerHTML = '<h4>3.4 Examen evaluativo </h4>'
     document.getElementById("info").innerHTML = `
     
     <div>
-        <h1>TEST 3</h1> <br>
-        <p>Resuelve el siguiente test para poder continuar, puedes tomarte el tiempo que necesites. Obten almenos un 6 de califiación para poder continuar!</p> <br>
+        <h1>TEST</h1> <br>
+        <p>Este test es sobre límites, necesitarás alguna hoja en blanco para que puedas resolver los problemas. Necesitas un 6 como mínimo para poder pasar así que tomate tu tiempo!</p> <br>
     </div>`;
 
     document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='3-test.html'"></input> `;
@@ -380,13 +380,13 @@ function radio12focus(){
 //RADIOS DEL TEMA 4
 
 function radio13focus(){
-    document.getElementById("info_titulo").innerHTML = '<h4>VIDEO.MP4</h4>'
+    document.getElementById("info_titulo").innerHTML = '<h4>4.1 Video explicativo</h4>'
     document.getElementById("info").innerHTML = `
     
     <div>
-        <h1>VIDEO 4</h1> <br>
-        <p>Ve este video y aprende ¿Que son? ¿Como identificarlas? ¿Qué tipos hay?, entre otras cosas que van a serte de utilidad en proximas clases, pon atención porque despues tu harás los ejecicios.</p> <br>
-        <p>Autor:</p>
+        <h1>VIDEO</h1> <br>
+        <p>Este es el útlimo video, aquí encontrarás ejercicios sobre derivadas resueltos paso a paso con lujo de detalle para que quede más claro que el agua, este tema es por el que segúramente haz tomado el curso así que presta mucha atención!</p> <br>
+        <p>Autor: Alan Vitela Sanchez</p>
     </div>`;
 
     document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='4-video.html'"></input> `;
@@ -398,12 +398,12 @@ function radio13focus(){
 };
 
 function radio14focus(){
-    document.getElementById("info_titulo").innerHTML = '<h4>DOCUMENTOS</h4>'
+    document.getElementById("info_titulo").innerHTML = '<h4>4.2 Documento de conceptos</h4>'
     document.getElementById("info").innerHTML = `
     
     <div>
-        <h1>INFORMACIÓN 4</h1> <br>
-        <p>En estos documentos podras leer mas infomracion</p> <br>
+        <h1>INFORMACIÓN</h1> <br>
+        <p>¿De qué me sirve derivar? ¿Cuáles son las reglas de derivación? Regla de la cadena ¿Qué es eso? , resuelve estas y otras dudas con este documento, te será de mucha utilidad.</p> <br>
     </div>`;
 
     document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='4-informacion.html'"></input> `;
@@ -415,12 +415,12 @@ function radio14focus(){
 };
 
 function radio15focus(){
-    document.getElementById("info_titulo").innerHTML = '<h4>EJERCICIOS</h4>'
+    document.getElementById("info_titulo").innerHTML = '<h4>4.3 Ejercicios de práctica</h4>'
     document.getElementById("info").innerHTML = `
     
     <div>
-        <h1>EJERCICIOS 4</h1> <br>
-        <p>Toma lapiz y pluma para resolver los siguientes ejercicios, no te preocupes, tambien te proporcionaremos las respuestas pero preaparate ya que la siguiente actividad es un test y tienes que aprobar para avanzar! </p> <br>
+        <h1>EJERCICIOS</h1> <br>
+        <p>Ánimo, ya es el últmo tema, trae de vuelta ese lapiz y esa hoja y comienza a derivar, recuerda que de momento te proporcionamos la respuesta y el procedimiento, pero en el examen no, así que procura entender el tema antes de pasar al test.</p> <br>
     </div>`;
 
     document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='4-ejercicios.html'"></input> `;
@@ -432,12 +432,12 @@ function radio15focus(){
 };
 
 function radio16focus(){
-    document.getElementById("info_titulo").innerHTML = '<h4>EXAMEN</h4>'
+    document.getElementById("info_titulo").innerHTML = '<h4>4.4 Test evaluativo</h4>'
     document.getElementById("info").innerHTML = `
     
     <div>
-        <h1>TEST 4</h1> <br>
-        <p>Resuelve el siguiente test para poder continuar, puedes tomarte el tiempo que necesites. Obten almenos un 6 de califiación para poder continuar!</p> <br>
+        <h1>TEST</h1> <br>
+        <p>Esta es la ultima actividad del curso, y por eso hemos dejado lo más dificil hasta el final, mucha suerte derivando y con este test final.</p> <br>
     </div>`;
 
     document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='4-test.html'"></input> `;

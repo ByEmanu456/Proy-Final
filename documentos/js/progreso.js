@@ -16,6 +16,16 @@ function cargarIndex(){
 
   if(userNivel == 17){
     console.log("Curso completado");
+    
+    document.getElementById("info_titulo").innerHTML = '<h4>Felicidades!!</h4>'
+    document.getElementById("info").innerHTML = `
+    
+    <div>
+        <h1>Haz terminado el curso!</h1> <br>
+        <p>De parte del equipo desarrollador te felicitamos por haber completado el curso y esperamos que te haya sido de utilidad. ¿Ya sacaste 10 en todos tus examenes? ¿Por qué no lo intentas?</p> <br>
+    </div>`;
+
+    document.getElementById("boton").innerHTML = ` <img src="../../imagenes/gifs/graduado.gif" width="70%"> `;
   }
 
   else{
