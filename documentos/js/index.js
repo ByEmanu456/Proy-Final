@@ -207,7 +207,11 @@ function radio3focus(){
     
     <div>
         <h1>EJERCICIOS</h1> <br>
+<<<<<<< HEAD
         <p>Para estos ejercicios no necesitas más que pensar un poco e identificar lo que se te pide, no te preocupes, te proporcionaremos las respuestas pero preparate ya que la siguiente actividad es un test y tienes que aprobar para avanzar! </p> <br>
+=======
+        <p>Para estos ejercicios no necesitas más que pensar un poco e identificar lo que se te pide, no te preocupes, te proporcionaremos las respuestas pero preaparate ya que la siguiente actividad es un test y tienes que aprobar para avanzar! </p> <br>
+>>>>>>> 87abe65ea9fc49ad48de4a558df46dc8f529b8bd
     </div>`;
 
     document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='1-ejercicios.html'"></input> `;
@@ -385,7 +389,11 @@ function radio13focus(){
     
     <div>
         <h1>VIDEO</h1> <br>
+<<<<<<< HEAD
         <p>Este es el útlimo video, aquí encontrarás ejercicios sobre derivadas resueltos paso a paso con lujo de detalle para que quede más claro que el agua, este tema es por el que seguramente haz tomado el curso así que presta mucha atención!</p> <br>
+=======
+        <p>Este es el útlimo video, aquí encontrarás ejercicios sobre derivadas resueltos paso a paso con lujo de detalle para que quede más claro que el agua, este tema es por el que segúramente haz tomado el curso así que presta mucha atención!</p> <br>
+>>>>>>> 87abe65ea9fc49ad48de4a558df46dc8f529b8bd
         <p>Autor: Alan Vitela Sanchez</p>
     </div>`;
 
@@ -437,7 +445,11 @@ function radio16focus(){
     
     <div>
         <h1>TEST</h1> <br>
+<<<<<<< HEAD
         <p>Esta es la última actividad del curso, y por eso hemos dejado lo más dificil hasta el final, mucha suerte derivando y con este test final.</p> <br>
+=======
+        <p>Esta es la ultima actividad del curso, y por eso hemos dejado lo más dificil hasta el final, mucha suerte derivando y con este test final.</p> <br>
+>>>>>>> 87abe65ea9fc49ad48de4a558df46dc8f529b8bd
     </div>`;
 
     document.getElementById("boton").innerHTML = ` <input type="button" class="informacion-boton" value="Comenzar!" onclick="location.href='4-test.html'"></input> `;

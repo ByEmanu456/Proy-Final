@@ -41,7 +41,10 @@ function eliminar($usuarioAeliminar){
             $usuario['nombre'] == $usuarioAeliminar['nombre'] &&
             $usuario['apellidos'] == $usuarioAeliminar['apellidos'] &&
             $usuario['fecha_nacimiento'] == $usuarioAeliminar['fecha_nacimiento'] &&
+<<<<<<< HEAD
             $usuario['color'] == $usuarioAeliminar['color'] &&
+=======
+>>>>>>> 87abe65ea9fc49ad48de4a558df46dc8f529b8bd
             $usuario['genero'] == $usuarioAeliminar['genero'] &&
             $usuario['semestre'] == $usuarioAeliminar['semestre'] &&
             $usuario['especialidad'] == $usuarioAeliminar['especialidad'] &&
@@ -79,7 +82,10 @@ function resetear($usuarioAresetear){
             $usuario['nombre'] == $usuarioAresetear['nombre'] &&
             $usuario['apellidos'] == $usuarioAresetear['apellidos'] &&
             $usuario['fecha_nacimiento'] == $usuarioAresetear['fecha_nacimiento'] &&
+<<<<<<< HEAD
             $usuario['color'] == $usuarioAresetear['color'] &&
+=======
+>>>>>>> 87abe65ea9fc49ad48de4a558df46dc8f529b8bd
             $usuario['genero'] == $usuarioAresetear['genero'] &&
             $usuario['semestre'] == $usuarioAresetear['semestre'] &&
             $usuario['especialidad'] == $usuarioAresetear['especialidad'] &&

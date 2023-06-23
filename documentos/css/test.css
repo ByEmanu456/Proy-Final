@@ -231,6 +231,7 @@ h2{
 .boton-siguiente{
     float: left;
     margin-right: 20px;
+<<<<<<< HEAD
     transition: background-color 0.5s, color 0.5s;
 }
 
@@ -241,4 +242,6 @@ h2{
 
 .boton-deshabilitado:hover{
     border: none;
+=======
+>>>>>>> 87abe65ea9fc49ad48de4a558df46dc8f529b8bd
 }

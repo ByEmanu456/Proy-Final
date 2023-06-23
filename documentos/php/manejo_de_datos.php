@@ -13,9 +13,15 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['enviar'])){
     //Verificar si la solicitud de AJAX con los datos se efectuó correctamente:
     if(
         isset($_POST['nombre']) && isset($_POST['apellidos']) &&
+<<<<<<< HEAD
         isset($_POST['fecha_nacimiento']) && isset($_POST['color']) &&
         isset($_POST['genero']) && isset($_POST['semestre']) &&
         isset($_POST['especialidad']) && isset($_POST['contrasena'])
+=======
+        isset($_POST['fecha_nacimiento']) && isset($_POST['genero']) &&
+        isset($_POST['semestre']) && isset($_POST['especialidad']) &&
+        isset($_POST['contrasena'])
+>>>>>>> 87abe65ea9fc49ad48de4a558df46dc8f529b8bd
     ){
         //Crear el progreso inicial del usuario nuevo:
         $progreso = array(
@@ -32,7 +38,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['enviar'])){
             "nombre" => $_POST['nombre'],
             "apellidos" => $_POST['apellidos'],
             "fecha_nacimiento" => $_POST['fecha_nacimiento'],
+<<<<<<< HEAD
             "color" => $_POST['color'],
+=======
+>>>>>>> 87abe65ea9fc49ad48de4a558df46dc8f529b8bd
             "genero" => $_POST['genero'],
             "semestre" => $_POST['semestre'],
             "especialidad" => $_POST['especialidad'],

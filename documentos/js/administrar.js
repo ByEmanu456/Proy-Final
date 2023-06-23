@@ -19,7 +19,11 @@ function mostrarUsuarios(usuarios){
                   usuario.nombre+' '+usuario.apellidos+
                   '</label><label><input type="radio" name="usuarios">'+
                   '</label></div>';
+<<<<<<< HEAD
     });
+=======
+    })
+>>>>>>> 87abe65ea9fc49ad48de4a558df46dc8f529b8bd
     container.innerHTML = result;
 }
 
@@ -94,7 +98,11 @@ function eliminar(event){
                         alert("Operación cancelada.");
                     }
                 }else{
+<<<<<<< HEAD
                     alert("Contraseña incorrecta.");
+=======
+                alert("Contraseña incorrecta.");
+>>>>>>> 87abe65ea9fc49ad48de4a558df46dc8f529b8bd
                 }
             }
         };
@@ -115,7 +123,10 @@ function seleccionar(){
         input = Array.from(input);
         input = input[0];
         if(input.checked == true){
+<<<<<<< HEAD
             let seleccionado = true;
+=======
+>>>>>>> 87abe65ea9fc49ad48de4a558df46dc8f529b8bd
             selectedUser = i;
             console.log("Index del usuario seleccionado:" + selectedUser);
             if(selectedUser >= 0 && selectedUser < usuarios.length){
@@ -145,9 +156,12 @@ function seleccionar(){
             }
         }
     }
+<<<<<<< HEAD
     if(seleccionado != true){
         alert("Seleccione un usuario");
     }
+=======
+>>>>>>> 87abe65ea9fc49ad48de4a558df46dc8f529b8bd
 }
 
 window.onload = cargarUsuarios();

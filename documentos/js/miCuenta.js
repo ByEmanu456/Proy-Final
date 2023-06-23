@@ -3,9 +3,14 @@ var objUsuarioSelec;
 
 var datosUsuario = [];
 
+<<<<<<< HEAD
 const randomNumber = Math.random();
 const url = `../php/selectedUser.txt?random=${randomNumber}`;
 const url2 = `../php/usuarios.JSON?random=${randomNumber}`;
+=======
+let randomNumber = Math.random();
+let url = `../php/selectedUser.txt?random=${randomNumber}`;
+>>>>>>> 87abe65ea9fc49ad48de4a558df46dc8f529b8bd
 
 fetch(url)
 .then(response => response.text())
@@ -17,7 +22,14 @@ fetch(url)
 
 function leerJSON(){
 
+<<<<<<< HEAD
     fetch(url2)
+=======
+    let randomNumber = Math.random();
+    let url = `../php/usuarios.JSON?random=${randomNumber}`;
+
+    fetch(url)
+>>>>>>> 87abe65ea9fc49ad48de4a558df46dc8f529b8bd
     .then(response => response.json())
     .then(data => {
 
@@ -48,7 +60,11 @@ function leerJSON(){
 
         console.log(datosUsuario);
 
+<<<<<<< HEAD
         rellenarTabla(objUsuarioSelec.color);
+=======
+        rellenarTabla();
+>>>>>>> 87abe65ea9fc49ad48de4a558df46dc8f529b8bd
 
     })
 
@@ -58,6 +74,7 @@ function leerJSON(){
 
 }
 
+<<<<<<< HEAD
 function rellenarTabla(color){
     //Cambiar el color de fondo de las celdas (superior)
     var datosCelda = document.querySelectorAll(".tabla th, .tabla td");
@@ -75,3 +92,12 @@ function rellenarTabla(color){
         document.getElementById("dato" + k).innerHTML = datosUsuario[k];
     }
 }
+=======
+function rellenarTabla(){
+    for(var i = 0; i < datosUsuario.length; i++){
+
+        document.getElementById("dato" + i).innerHTML = datosUsuario[i];
+
+    }
+}
+>>>>>>> 87abe65ea9fc49ad48de4a558df46dc8f529b8bd

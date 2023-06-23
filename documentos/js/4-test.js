@@ -447,9 +447,12 @@ function siguiente(){
             document.getElementById("contenedor").classList.add("test-contenedor-desaprobado");
         }
 
+<<<<<<< HEAD
         document.getElementsByClassName("boton-siguiente")[0].disabled = false;
         document.getElementsByClassName("boton-siguiente")[0].classList.remove("boton-deshabilitado");
 
+=======
+>>>>>>> 87abe65ea9fc49ad48de4a558df46dc8f529b8bd
     }
 
     setTimeout(function(){

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var userNivel;
 var calificiones;
 var n_panel;
@@ -10,6 +11,21 @@ function cargarIndex(){
   n_panel = Math.floor((userNivel - 1 ) / 4);
   console.log(userNivel);
 
+=======
+
+var userNivel;
+var calificiones;
+var n_panel;
+
+
+function cargarIndex(){
+
+  userNivel =  pasarNivel();
+  calificiones = [pasarTest1(),pasarTest2(),pasarTest3(),pasarTest4()];
+  n_panel = Math.floor((userNivel - 1 ) / 4);
+  console.log(userNivel);
+
+>>>>>>> 87abe65ea9fc49ad48de4a558df46dc8f529b8bd
   panelActual();
   verifiProgreso();
 

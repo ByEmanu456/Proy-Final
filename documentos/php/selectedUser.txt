@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ADMIN 01: DNNNY
+=======
+Esteban Flores Martínez
+>>>>>>> 87abe65ea9fc49ad48de4a558df46dc8f529b8bd

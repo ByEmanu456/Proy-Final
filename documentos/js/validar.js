@@ -5,12 +5,19 @@
 */
 
 //!Función que envía los datos mediante una solicitud AJAX:
+<<<<<<< HEAD
 function enviar(name, lastName, birthDate, color, gender, semester, speciality, passWord){
+=======
+function enviar(name, lastName, birthDate, gender, semester, speciality, passWord){
+>>>>>>> 87abe65ea9fc49ad48de4a558df46dc8f529b8bd
     if(name != "" && lastName != "" && birthDate != "" && gender != "" && semester != "" && speciality != "" && passWord != ""){
         const params = "nombre=" + encodeURIComponent(name)
                        + "&apellidos=" + encodeURIComponent(lastName)
                        + "&fecha_nacimiento=" + encodeURIComponent(birthDate)
+<<<<<<< HEAD
                        + "&color=" + encodeURIComponent(color)
+=======
+>>>>>>> 87abe65ea9fc49ad48de4a558df46dc8f529b8bd
                        + "&genero=" + encodeURIComponent(gender)
                        + "&semestre=" + encodeURIComponent(semester)
                        + "&especialidad=" + encodeURIComponent(speciality)
@@ -36,6 +43,7 @@ function validar(event){
     let _nombre = document.getElementById("nombre").value;
     let _apellidos = document.getElementById("apellidos").value;
     let _fecha_nacimiento = document.getElementById("fecha").value;
+<<<<<<< HEAD
     let _color = document.getElementById("color").value;
     const regExColor = /^#[0-9A-Fa-f]{6}$/i;
     let _genero = "";
@@ -46,6 +54,15 @@ function validar(event){
             break;
         }
     }
+=======
+    let _genero = document.getElementsByName("genero");
+    let _result = 0;
+    _genero.forEach(radio => {
+        if(radio.checked == true){
+            _result = radio.value;
+        }
+    });
+>>>>>>> 87abe65ea9fc49ad48de4a558df46dc8f529b8bd
     let _semestre = document.getElementById("semestre").value;
     let _especialidad = document.getElementById("especialidad").value;
     let _contrasena = document.getElementById("contrasena").value;
@@ -61,6 +78,7 @@ function validar(event){
     }else if(_fecha_nacimiento.trim() == ""){
         alert("La fecha de nacimiento es obligatoria.");
         console.log("Birth date error!");
+<<<<<<< HEAD
     }else if(_color.trim() == ""){
         alert("El color es obligatorio.");
         console.log("Color error!");
@@ -68,6 +86,9 @@ function validar(event){
         alert("El color debe tener un formato válido (por ejemplo, #FF0000).");
         console.log("Color error!");
     }else if(_genero != "Hombre" && _genero != "Mujer" && _genero != "Otro"){
+=======
+    }else if(_result != "Hombre" && _result != "Mujer" && _result != "Otro"){
+>>>>>>> 87abe65ea9fc49ad48de4a558df46dc8f529b8bd
         alert("El genero es obligatorio.");
         console.log("Gender error!");
     }else if(_semestre.trim() == ""){
@@ -88,7 +109,11 @@ function validar(event){
         alert("Las contraseñas no coinciden.");
         console.log("Confirmation error!");
     }else{
+<<<<<<< HEAD
         enviar(_nombre, _apellidos, _fecha_nacimiento, _color, _genero, _semestre, _especialidad, _contrasena);
+=======
+        enviar(_nombre, _apellidos, _fecha_nacimiento, _genero, _semestre, _especialidad, _contrasena);
+>>>>>>> 87abe65ea9fc49ad48de4a558df46dc8f529b8bd
         console.log("Success!");
     }
 }

@@ -5,9 +5,14 @@ var nivelesComp;
 var calificaciones;
 var nivel = 0;
 
+<<<<<<< HEAD
 const randomNumber = Math.random();
 const url = `../php/selectedUser.txt?random=${randomNumber}`;
 const url2 = `../php/usuarios.JSON?random=${randomNumber}`;
+=======
+let randomNumber = Math.random();
+let url = `../php/selectedUser.txt?random=${randomNumber}`;
+>>>>>>> 87abe65ea9fc49ad48de4a558df46dc8f529b8bd
 
 fetch(url)
 .then(response => response.text())
@@ -19,7 +24,14 @@ fetch(url)
 
 function leerJSON(){
 
+<<<<<<< HEAD
     fetch(url2)
+=======
+    let randomNumber = Math.random();
+    let url = `../php/usuarios.JSON?random=${randomNumber}`;
+
+    fetch(url)
+>>>>>>> 87abe65ea9fc49ad48de4a558df46dc8f529b8bd
     .then(response => response.json())
     .then(data => {
 
@@ -77,7 +89,11 @@ function rellenarTabla(){
             }
 
             else if(celdaTabla.id === 'dato2' || celdaTabla.id === 'dato6' || celdaTabla.id === 'dato10' || celdaTabla.id === 'dato14'){
+<<<<<<< HEAD
                 celdaTabla.innerHTML = "Resuelto"
+=======
+                celdaTabla.innerHTML = "Resuleto"
+>>>>>>> 87abe65ea9fc49ad48de4a558df46dc8f529b8bd
             }
 
             else if(celdaTabla.id === 'dato3'){
@@ -112,7 +128,11 @@ function rellenarTabla(){
             }
 
             else if(celdaTabla.id === 'dato3' || celdaTabla.id === 'dato7' || celdaTabla.id === 'dato11' || celdaTabla.id === 'dato15'){
+<<<<<<< HEAD
                 celdaTabla.innerHTML = "Sin aprobar";
+=======
+                celdaTabla.innerHTML = "Sin contestar";
+>>>>>>> 87abe65ea9fc49ad48de4a558df46dc8f529b8bd
             }
         }
     }
@@ -120,4 +140,8 @@ function rellenarTabla(){
     document.getElementById("nivel").innerHTML = "Niveles completados: " + nivel + " de 16";
     document.getElementById("barra").value = nivel;
     
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 87abe65ea9fc49ad48de4a558df46dc8f529b8bd

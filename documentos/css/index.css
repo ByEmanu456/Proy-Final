@@ -324,7 +324,10 @@ main{
 .anuncio{   
     height: calc(35vh + 35px);
     width: 340px;
+<<<<<<< HEAD
     cursor: pointer;
+=======
+>>>>>>> 87abe65ea9fc49ad48de4a558df46dc8f529b8bd
 
     border-radius: 20px;
 }
@@ -357,8 +360,14 @@ main{
     justify-content: center;
 }
 
+<<<<<<< HEAD
 .anuncio-descripcion h1{
     font-size: 40px;
     color: white;
+=======
+.anuncio-boton{
+    height: 20px;
+    width: 20px;
+>>>>>>> 87abe65ea9fc49ad48de4a558df46dc8f529b8bd
 }
 
