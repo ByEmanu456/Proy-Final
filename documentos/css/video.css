@@ -23,17 +23,16 @@ body{
     flex-direction: column;
 }
 
-body::before{
+body:before{
     content: "";
     width: 100%;
     min-height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(90deg, rgb(8, 8, 8) 0%, rgb(81, 81, 81) 42%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(180deg, rgb(8, 8, 8) 0%, rgb(49, 49, 49) 42%, rgba(78, 78, 78, 0) 100%);
     opacity: 0.5;
     z-index: -1;
-
 }
 
 /*Sección del video*/
@@ -74,7 +73,7 @@ section{
 .botones{
     height: 12%;
     width: 100%;
-    border-top: 1px solid rgb(111, 109, 108);
+    border-top: 1px solid #6f6d6c;
 
     display: flex;
     align-items: center;

@@ -1,0 +1,104 @@
+{
+    "0": {
+        "nombre": "ADMIN",
+        "apellidos": "01: DNNNY",
+        "fecha_nacimiento": "16-05-2005",
+        "color": "#FFC80A",
+        "genero": "Hombre",
+        "semestre": 4,
+        "especialidad": "Programación",
+        "contrasena": "asdfghJKL500",
+        "progreso": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true,
+            "10": true,
+            "11": true,
+            "12": true,
+            "13": true,
+            "14": true,
+            "15": true
+        },
+        "examenes": {
+            "0": 10,
+            "1": 10,
+            "2": 10,
+            "3": 10
+        }
+    },
+    "1": {
+        "nombre": "Fer",
+        "apellidos": "Aguilar Cabrera",
+        "fecha_nacimiento": "20-09-2003",
+        "color": "#FF0064",
+        "genero": "Otro",
+        "semestre": 6,
+        "especialidad": "Ofimática",
+        "contrasena": "QWERTYuiop123",
+        "progreso": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true,
+            "10": true,
+            "11": true,
+            "12": false,
+            "13": false,
+            "14": false,
+            "15": false
+        },
+        "examenes": {
+            "0": 9,
+            "1": 9,
+            "2": 9,
+            "3": 0
+        }
+    },
+    "2": {
+        "nombre": "Mariana",
+        "apellidos": "Gonzalez Trujillo",
+        "fecha_nacimiento": "01-01-2008",
+        "color": "#0AC80A",
+        "genero": "Mujer",
+        "semestre": 1,
+        "especialidad": "Alimentos y bebidas",
+        "contrasena": "123ABCDe",
+        "progreso": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": false,
+            "4": false,
+            "5": false,
+            "6": false,
+            "7": false,
+            "8": false,
+            "9": false,
+            "10": false,
+            "11": false,
+            "12": false,
+            "13": false,
+            "14": false,
+            "15": false
+        },
+        "examenes": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0
+        }
+    }
+}

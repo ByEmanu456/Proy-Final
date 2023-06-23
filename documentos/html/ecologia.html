@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EcoByte - Nuestro producto</title>
+    <link rel="icon" href="../../imagenes/favicon_chico.ico">
+    <link rel="stylesheet" href="../css/ecologia.css">
+</head>
+<body>
+    <header class="menu">
+        <a href="index.html" class="logo">
+            <img src="../../imagenes/ICONOS/favicon2.png" class="logo-favicon">
+            <span class="logo-eco">Eco</span>
+            <span class="logo-byte">Byte</span>
+        </a>
+
+        <p>Nuestro producto ecológico: La calculoadora reciclada</p>
+        
+        <nav class="menu-nav">
+            <a href="index.html">Ir al curso</a>
+            <a href="reseña.html">Dejar una reseña</a>
+        </nav>
+    </header>
+
+    <div class="panel">
+
+        <h1>La calculadora reciclada</h1>
+
+        <hr>
+        <h2>¿En qué consiste?</h2>
+        <p>Consta de una tabla de madera sobre la cual hay carriles hechos con pequeños pedazos de madera sobre las cuales ruedan canicas, en determinadas rutas las canicas se encuentran con plasticos que dependiendo su estado; la canica irá de un lado o a otro.</p>
+        <p>Se puede decir que la calculadora funciona en sistema binario, debido a que los plasticos solo tienen dos estados, izquierda o derecha, uno o cero, de estos es de donde se obtiene e insertan los datos para escribir los datos de la operación o leer el resultado.</p>
+        <p>Cuando la operación está lista la canica toma una ruta en la que llega a un pequeño cascabel que avisa que la operación terminó.</p>
+        <p>Esta calculadora puede: Sumar, multiplicar, restar y dividir, sin embargo el modelo que hemos realizado está limitado hasta las restas. Con algunas extensiones la calculadora es capaz de calcular funciones trigonometricas, logaritmos, potenicas, raices, etc.</p>
+        <img src="../../imagenes/calculadora.jpg">
+
+        <hr>
+
+        <h2>¿Por qué lo hicimos?</h2>
+        <p>Nos decidimos por hacer este producto por varios motivos, en primer lugar deseabamos algo que tuviera que ver con programación pero a la vez que pudieramos elaborarlo sin gastar un solo peso con productos reciclados. Es así como encontramos en internet un modelo de 1950 llamado DIGI-COMP 2, esta fué nuestra principal inspiración para hacer el producto, por lo que decidimos traerlo nuevamente a la vida y ¿Por qué no? cuidando al medio ambiente.</p>
+        <p>Con este producto desamos que las personas interesadas puedan aprender sobre: ¿Qué es el sistema binario? ¿Cómo eran las primeras computadoras? y ¿Cómo funcionan las computadoras modernas?; todo esto de manera absolutamente divertida y sustentable.</p>
+        <div class="imagenes">
+            <img src="../../imagenes/calculadora2.jpg">
+            <img src="../../imagenes/calculadora3.jpg">
+        </div>
+
+        <hr>
+
+        <h2>¿Qué materiales utilizamos?</h2>
+        <p>Tenemos disponibles 2 modelos, uno grande completamente funcional y otros pequeños cuya función es servir de modelos representativos y de guía para entender las preguntas hechas anteriormente.
+        
+        <p>Para el modelo grande necesitamos de:</p>
+        <ol>
+            <li>Una tabla de madera no muy grande en el que va todo el sistema</li>
+            <li>Cartón que impide que la canica salga del tablero</li>
+            <li>Pequeñas tablitas de madera por donde va la canica</li>
+            <li>Cartón o plastico para hacer los plaquitas que redireccionan la canica</li>
+            <li>Palitos de popote para poner las plaquitas y que giren facilmente</li>
+            <li>Clavitos para fijar algunos elementos</li>
+            <li>Resistol y cilicón para fijar los carriles a la tabla</li>
+            <li>Un cascabel que avisa cuando la operación estpa terminada</li>
+            <li>Canicas</li>
+        </ol>
+
+        <p>Para los modelos pequeños necesitamos de:</p>
+        <ol>
+            <li>Cartón</li>
+            <li>Tapas de diferentes colores</li>
+            <li>Palitos de paleta</li>
+            <li>Algo para cortar los palitos de madera</li>
+            <li>Cilicón frio</li>
+        </ol>
+
+        <hr>
+
+        <h2>¿Qué pasos seguimos para elaborarlo?</h2>
+
+        <p>En primer lugar pusimos los palos de madera sobre la tabla en la forma del siguiente diseño para que puedan rodar las canicas y hacer pruebas.</p>
+
+        <canvas width="270px" height="320px" id="miCanvas">
+            Su navegador no soporta canvas
+        </canvas>
+
+        <p>Posteriormente colocamos un pequeño pedazo de palito de paleta hueco donde irán las plaquitas de plastico que cambian la dirección de las canicas las canicas.</p>
+        <p>Recortamos el plastico de una forma especial para que pudiera rodar la canica sobre ella y la colocamos con un clavo en su lugar correspondiente.</p>
+        <p>Colocamos alguas puertas que permitiran o no el acceso a las canicas a lugares especificos, esto con un pequeño trozo de madera y un clavito.</p>
+        <p>Y por único colocamos el cascabel en un lugar especifico donde la canica avisa que ya terminó el calculo.</p>
+
+    </div>
+</body>
+
+<script>
+
+    //PINTAR EN EL CANVAS
+
+    window.onload = function(){
+        var elemento = document.getElementById("miCanvas");
+        if(elemento && elemento.getContext){
+            var contexto = elemento.getContext('2d');
+        }
+        if(contexto){
+            contexto.fillStyle = "#a87952";
+            contexto.fillRect(0,0,300,320); //fondo
+
+            contexto.strokeStyle = "#694e37";
+            contexto.moveTo(262,30);
+            contexto.lineTo(150, 60);
+            contexto.stroke();
+
+            contexto.moveTo(145, 80);
+            contexto.lineTo(125, 100);
+            contexto.stroke();
+
+            contexto.moveTo(155, 80);
+            contexto.lineTo(225, 100);
+            contexto.stroke();
+
+            contexto.moveTo(225, 110);
+            contexto.lineTo(225, 130);
+            contexto.stroke();
+
+            contexto.moveTo(240, 80);
+            contexto.lineTo(240, 130);
+            contexto.stroke();
+
+            contexto.moveTo(240, 80);
+            contexto.lineTo(240, 130);
+            contexto.stroke();
+
+            contexto.moveTo(200, 140);
+            contexto.lineTo(200, 300);
+            contexto.stroke();
+
+            contexto.moveTo(205, 140); //primera linea
+            contexto.lineTo(245 , 150);
+            contexto.stroke();
+
+            contexto.moveTo(205, 170);
+            contexto.lineTo(245, 180);
+            contexto.stroke();
+
+            contexto.moveTo(205, 200);
+            contexto.lineTo(245, 210);
+            contexto.stroke();
+
+            contexto.moveTo(205, 230);
+            contexto.lineTo(245, 240);
+            contexto.stroke();
+
+            contexto.moveTo(205, 260);
+            contexto.lineTo(245, 270);
+            contexto.stroke();
+
+            contexto.moveTo(205, 290);
+            contexto.lineTo(245, 300);
+            contexto.stroke();
+
+            contexto.moveTo(195, 140);
+            contexto.lineTo(130, 125);
+            contexto.stroke();
+
+            contexto.moveTo(195, 170);
+            contexto.lineTo(90, 147);
+            contexto.stroke();
+
+            contexto.moveTo(90, 144);
+            contexto.lineTo(90, 117);
+            contexto.stroke();
+
+            contexto.moveTo(195, 200);
+            contexto.lineTo(50, 172);
+            contexto.stroke();
+
+            contexto.moveTo(50, 169);
+            contexto.lineTo(50, 117);
+            contexto.stroke();
+
+            contexto.moveTo(195, 230);
+            contexto.lineTo(15, 198);
+            contexto.stroke();
+
+            contexto.moveTo(15, 195);
+            contexto.lineTo(15, 117);
+            contexto.stroke();
+            
+        }
+    }
+</script>
+
+</html>

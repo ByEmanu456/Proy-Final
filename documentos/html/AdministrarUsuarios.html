@@ -1,0 +1,33 @@
+<html lang="es">
+    <head>
+        <title>Administrar Usuarios</title>
+        <link rel="icon" href="../../imagenes/favicon_chico.ico">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/Estilos.css">
+        <link rel="stylesheet" href="../css/EstilosAdministrarUsuarios.css">
+    </head>
+
+    <body>
+        <div class="formulario">
+            
+            <h1>Elimina o escoge el usuario</h1>
+
+            <form method="GET" action="../php/manejo_de_datos.php" onsubmit="eliminar(event); return false;">
+
+                <div class="usuarios" id="usuarios">
+                    <!-- Los usuarios serán mostrados aquí -->
+                </div>
+
+                <div class="contenedorBtn">
+                    <input type="button" value="Seleccionar" class="boton" onclick="seleccionar();">              
+                </div>
+
+                <div class="contenedorBtn">
+                    <input type="submit" value="Eliminar" class="boton">
+                </div>
+    
+            </form>
+        </div>
+        <script src="../js/administrar.js"></script>
+    </body>
+</html>

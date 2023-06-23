@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EcoByte - Nuestro producto</title>
+    <link rel="icon" href="../../imagenes/favicon_chico.ico">
+    <link rel="stylesheet" href="../css/reseña.css">
+</head>
+<body>
+    <header class="menu">
+        <a href="index.html" class="logo">
+            <img src="../../imagenes/ICONOS/favicon2.png" class="logo-favicon">
+            <span class="logo-eco">Eco</span>
+            <span class="logo-byte">Byte</span>
+        </a>
+
+        <p>Nuestro producto ecológico: La calculoadora reciclada</p>
+        
+        <nav class="menu-nav">
+            <a href="index.html">Ir al curso</a>
+            <a href="reseña.html">Dejar una reseña</a>
+        </nav>
+    </header>
+
+    <div class="panel">
+
+        <h1>Dejar una reseña</h1>
+
+        <input type="text" id="nombre" class="nombre" placeholder="Nombre">
+        <textarea id="reseña" class="reseña"></textarea>
+        <input type="button" value="ENVIAR" id="enviar" class="boton">
+        <input type="button" value="VER RESEÑAS" id="ver" class="boton">
+
+        <div id="reseñas" class="div"></div>
+
+    </div>
+</body>
+
+<script>
+
+window.onload = function() {
+  var enviarBtn = document.getElementById("enviar");
+  var verBtn = document.getElementById("ver");
+  var nombreInput = document.getElementById("nombre");
+  var reseñaTextarea = document.getElementById("reseña");
+  var reseñasDiv = document.getElementById("reseñas");
+
+  enviarBtn.addEventListener("click", function() {
+
+    if (nombreInput.value.trim() === "" || reseñaTextarea.value.trim() === "") {
+        alert("Por favor, completa todos los campos");
+      } else {
+    
+    var nombre = nombreInput.value;
+    var reseña = reseñaTextarea.value;
+    var reseñasGuardadas = localStorage.getItem("reseñas");
+    var reseñas = [];
+
+    if (reseñasGuardadas) {
+      reseñas = JSON.parse(reseñasGuardadas);
+    }
+
+    reseñas.push({ nombre: nombre, reseña: reseña });
+
+    localStorage.setItem("reseñas", JSON.stringify(reseñas));
+
+    nombreInput.value = "";
+    reseñaTextarea.value = "";
+
+    alert("Reseña enviada correctamente");}
+  });
+
+  verBtn.addEventListener("click", function() {
+
+    var reseñasGuardadas = localStorage.getItem("reseñas");
+    var reseñas = [];
+
+    if (reseñasGuardadas) {
+      reseñas = JSON.parse(reseñasGuardadas);
+    }
+
+    var html = "";
+    for (var i = 0; i < reseñas.length; i++) {
+      html += "<p><strong>" + reseñas[i].nombre + ":</strong> " + reseñas[i].reseña + "</p><br>";
+    }
+
+    reseñasDiv.innerHTML = html;}
+  );
+};
+
+    
+</script>
+
+</html>

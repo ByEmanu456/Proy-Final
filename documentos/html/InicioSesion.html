@@ -1,0 +1,46 @@
+<html lang="es">
+    <head>
+        <title>Inicia Seción</title>
+        <link rel="icon" href="../../imagenes/favicon_chico.ico">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/Estilos.css">
+    </head>
+
+    <body>
+        <div class="formulario">
+
+            <div class="logo">
+                <img src="../../imagenes/ICONOS/favicon2.png" class="logo">
+            </div>
+            
+            <h1>Inicia Sesión Aquí</h1>
+
+            <form onsubmit="iniciarSesion(event);">
+
+                <div class="entrada">
+                    <label>Usuario</label>
+                    <input type="text" placeholder="Escriba su usuario" id="usuario">
+                </div>
+                
+                <div class="entrada">
+                    <label>Contraseña</label>
+                    <input type="password" placeholder="Ingrese su contraseña" id="contrasena">
+                </div>
+
+                <div class="vinculos">
+                    <a href="CrearCuenta.html">¿No tiene una cuenta?</a>
+                </div>
+
+                <div class="contenedorBtn">
+                    <input type="submit" value="Iniciar Seción" class="boton">              
+                </div>
+
+                <div class="contenedorBtn">
+                    <input type="button" value="Administrar usuarios" class="boton" onclick="location='AdministrarUsuarios.html'">
+                </div>
+
+            </form>
+        </div>
+        <script src="../js/select_user.js"></script>
+    </body>
+</html>

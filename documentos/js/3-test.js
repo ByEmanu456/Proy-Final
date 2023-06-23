@@ -321,7 +321,7 @@ function siguiente(){
 
                 <div class="opcion">
                     <label>1/x<sup>2</sup></label>
-                    <label><input type="radio" name="respuestas" onfocus="opcionFocus()""></label>
+                    <label><input type="radio" name="respuestas" onfocus="opcionFocus()"></label>
                 </div>
 
                 <div class="opcion">
@@ -446,6 +446,9 @@ function siguiente(){
 
             document.getElementById("contenedor").classList.add("test-contenedor-desaprobado");
         }
+
+        document.getElementsByClassName("boton-siguiente")[0].disabled = false;
+        document.getElementsByClassName("boton-siguiente")[0].classList.remove("boton-deshabilitado");
 
     }
 

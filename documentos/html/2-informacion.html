@@ -2,33 +2,35 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Document</title>
+        <title>EcoByte - Aprende Calculo</title>
+        <link rel="icon" href="../../imagenes/favicon_chico.ico">
         <link rel="stylesheet" href="../css/menu-nav.css">
         <link rel="stylesheet" href="../css/informacion.css">
+        <script src="../js/calificaciones.js"></script>
     </head>
     <body>
 
         <!--BARRA DE MENÚ-->
 
-        <header class="menu">
-            <a href="index.html" class="logo">
-                <img src="../../imagenes/ICONOS/favicon2.png" class="logo-favicon">
-                <span class="logo-eco">Eco</span>
-                <span class="logo-byte">Byte</span>
-            </a>
-    
-            <marquee>
-                <p>| EcoByte: Curso gratis y online de calculo difrencial |<a href="index.html">| ¿Ya conoces nuestro producto ecológico? Conocelo y da click aquí |</a></p>
-            </marquee>
-            
-            <nav class="menu-nav">
-                <a href="#">¿Quienes somos?</a>
-                <a href="#">Calificaciones</a>
-                <a href="#">Mi Cuenta</a>
-            </nav>
-        </header>
+    <header class="menu">
+        <a href="index.html" class="logo">
+            <img src="../../imagenes/ICONOS/favicon2.png" class="logo-favicon">
+            <span class="logo-eco">Eco</span>
+            <span class="logo-byte">Byte</span>
+        </a>
 
-    <!--SECCIÓN DE LA INFORMACIÓN-->
+        <marquee>
+            <p>| EcoByte: Curso gratis y online de calculo diferencial | <a href="ecologia.html">| ¿Ya conoces nuestro producto ecológico? Conócelo y da click aquí |</a> | ¿Intentas regresar al menú principal? Por qué no pruebas dando click en el logo |</p>
+        </marquee>
+        
+        <nav class="menu-nav">
+            <a href="quienesSomos.html">¿Quiénes somos?</a>
+            <a href="miProgreso.html">Mi progreso</a>
+            <a href="miCuenta.html" id="cuenta">Mi Cuenta</a>
+        </nav>
+    </header>
+
+        <!--SECCIÓN DE LA INFORMACIÓN-->
 
         <section>
             <div class="informacion-panel">
@@ -36,6 +38,11 @@
 
                     <h1>Funciones Matemáticas</h1>
                     <hr>
+
+                    <div class="audio-contenedor">
+                        <p>Texto a voz</p>
+                        <audio controls src="../../audios/Audio2.mp3"></audio>
+                    </div>
 
                     <h2>¿Qué son las funciones?</h2>
                     <p>Una función matemática es una relación que se establece entre dos conjuntos, a través de la cual a cada elemento del primer conjunto se le asigna un único elemento del segundo conjunto o ninguno.</p>
@@ -77,7 +84,7 @@
                    <p>Se llaman funciones exponenciales a las que tienen la ecuación f ( x ) = a<sup>bx</sup>, siendo la base “a” un número real positivo distinto de cero.</p> 
 
                    <h3>Funciones logarítmicas</h3>
-                   <p>Las funciones del tipo y = log<sub>a</sub>x  llamadas logarítmicas son la inversa de la función exponencial f ( x ) = ax. siendo la base “a” un número real positivo distinto de cero.</p>
+                   <p>Las funciones del tipo y = log<sub>a</sub>x  llamadas logarítmicas son la inversa de la función exponencial f ( x ) = ax. Siendo la base “a” un número real positivo distinto de cero.</p>
                 </div>
 
                 <!--BOTONES INFERIORES-->
@@ -85,7 +92,7 @@
                 <div class="botones">
                     <input type="button" class="boton-regresar" value="ANTERIOR" onclick="location.href='2-video.html'">
                     <h1>Conceptos matemáticos 2</h1>
-                    <input type="button" class="boton-siguiente" value="TERMINADO!">
+                    <input type="button" class="boton-siguiente" value="TERMINADO!" onclick="lvlUp(5)">
                 </div>
             </div>
         </section>

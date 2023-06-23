@@ -2,31 +2,33 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Document</title>
+        <title>EcoByte - Aprende Calculo</title>
+        <link rel="icon" href="../../imagenes/favicon_chico.ico">
         <link rel="stylesheet" href="../css/menu-nav.css">
         <link rel="stylesheet" href="../css/informacion.css">
+        <script src="../js/calificaciones.js"></script>
     </head>
     <body>
 
-        <!--BARRA DE MENÚ-->
+    <!--BARRA DE MENÚ-->
 
-        <header class="menu">
-            <a href="index.html" class="logo">
-                <img src="../../imagenes/ICONOS/favicon2.png" class="logo-favicon">
-                <span class="logo-eco">Eco</span>
-                <span class="logo-byte">Byte</span>
-            </a>
-    
-            <marquee>
-                <p>| EcoByte: Curso gratis y online de calculo difrencial |<a href="index.html">| ¿Ya conoces nuestro producto ecológico? Conocelo y da click aquí |</a></p>
-            </marquee>
-            
-            <nav class="menu-nav">
-                <a href="#">¿Quienes somos?</a>
-                <a href="#">Calificaciones</a>
-                <a href="#">Mi Cuenta</a>
-            </nav>
-        </header>
+    <header class="menu">
+        <a href="index.html" class="logo">
+            <img src="../../imagenes/ICONOS/favicon2.png" class="logo-favicon">
+            <span class="logo-eco">Eco</span>
+            <span class="logo-byte">Byte</span>
+        </a>
+
+        <marquee>
+            <p>| EcoByte: Curso gratis y online de calculo diferencial | <a href="ecologia.html">| ¿Ya conoces nuestro producto ecológico? Conócelo y da click aquí |</a> | ¿Intentas regresar al menú principal? Por qué no pruebas dando click en el logo |</p>
+        </marquee>
+        
+        <nav class="menu-nav">
+            <a href="quienesSomos.html">¿Quiénes somos?</a>
+            <a href="miProgreso.html">Mi progreso</a>
+            <a href="miCuenta.html" id="cuenta">Mi Cuenta</a>
+        </nav>
+    </header>
 
     <!--SECCIÓN DE LA INFORMACIÓN-->
 
@@ -36,6 +38,11 @@
 
                     <h1>Constantes y variables</h1>
                     <hr>
+
+                    <div class="audio-contenedor">
+                        <p>Texto a voz</p>
+                        <audio controls src="../../audios/Audio1.mp3"></audio>
+                    </div>
 
                     <h2>¿Qué son las constantes?</h2>
                     <p>Una constante, en el área de las matemáticas, es un valor que permanece fijo y no puede cambiar dentro de las condiciones planteadas (en un problema algebraico, por ejemplo).</p>
@@ -69,7 +76,7 @@
                     <p>A menudo 'y' es la variable que se utiliza para representar la variable dependiente en una ecuación.</p>
 
                     <h3>Independientes</h3>
-                    <p>La variable independiente es aquella que determina el valor de la variable dependiente. Su valor valor no depende del de otra variable, sin embargo puede existir más de una variable independiente. </p>
+                    <p>La variable independiente es aquella que determina el valor de la variable dependiente. Su valor no depende del de otra variable, sin embargo puede existir más de una variable independiente. </p>
                     <p>En una función se suele representar por la letra 'x'.</p>
                     
                 </div>
@@ -79,7 +86,7 @@
                 <div class="botones">
                     <input type="button" class="boton-regresar" value="ANTERIOR" onclick="location.href='1-video.html'">
                     <h1>Conceptos matemáticos 1</h1>
-                    <input type="button" class="boton-siguiente" value="TERMINADO!">
+                    <input type="button" class="boton-siguiente" value="TERMINADO!" onclick="lvlUp(1)">
                 </div>
             </div>
         </section>

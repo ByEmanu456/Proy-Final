@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>EcoByte - Aprende Calculo</title>
+    <link rel="icon" href="../../imagenes/favicon_chico.ico">
     <link rel="stylesheet" href="../css/menu-nav.css">
     <link rel="stylesheet" href="../css/ejercicios.css">
     <link rel="stylesheet" href="../css/ejercicios-efectos.css">
     <script src="../js/ejercicios.js"></script>
+    <script src="../js/calificaciones.js"></script>
 </head>
 <body>
 
@@ -20,13 +22,13 @@
         </a>
 
         <marquee>
-            <p>| EcoByte: Curso gratis y online de calculo difrencial |<a href="index.html">| ¿Ya conoces nuestro producto ecológico? Conocelo y da click aquí |</a></p>
+            <p>| EcoByte: Curso gratis y online de calculo diferencial | <a href="ecologia.html">| ¿Ya conoces nuestro producto ecológico? Conócelo y da click aquí |</a> | ¿Intentas regresar al menú principal? Por qué no pruebas dando click en el logo |</p>
         </marquee>
         
         <nav class="menu-nav">
-            <a href="#">¿Quienes somos?</a>
-            <a href="#">Calificaciones</a>
-            <a href="#">Mi Cuenta</a>
+            <a href="quienesSomos.html">¿Quiénes somos?</a>
+            <a href="miProgreso.html">Mi progreso</a>
+            <a href="miCuenta.html" id="cuenta">Mi Cuenta</a>
         </nav>
     </header>
 
@@ -104,8 +106,8 @@
 
             <div class="botones">
                 <input type="button" class="boton-regresar" value="REGRESAR" onclick="location.href='2-informacion.html'">
-                <h1>Ejercicios de práctica 1</h1>
-                <input type="button" class="boton-siguiente" value="TERMINADO!">
+                <h1>Ejercicios de práctica 2</h1>
+                <input type="button" class="boton-siguiente" value="TERMINADO!" onclick="lvlUp(6)">
             </div>
     </div>
     </section>

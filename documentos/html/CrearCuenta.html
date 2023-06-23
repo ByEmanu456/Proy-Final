@@ -1,0 +1,90 @@
+<html lang="es">
+    <!--
+        !Proyecto Final del semestre Programación SubI y SubII
+        HTML by: Morales
+        Aditions by: EFM
+        ?Versión: Server for Fonseca
+    -->
+    <head>
+        <title>Cree Una Cuenta</title>
+        <link rel="icon" href="../../imagenes/favicon_chico.ico">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/Estilos.css">
+        <script src="../js/validar.js"></script>
+    </head>
+    <body>
+        <div class="formulario2">
+            <h1>Cree una cuenta aquí</h1>
+            <form method="POST" action="../php/manejo_de_datos.php" onsubmit="validar(event); return false;">
+                <div class="entrada">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" placeholder="Escriba su nombre" id="nombre" name="nombre">
+                </div>
+                <div class="entrada">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" placeholder="Escriba sus apellidos" id="apellidos" name="apellidos">
+                </div>
+                <div class="entrada">
+                    <label for="fecha">Fecha de nacimiento</label>
+                    <input type="date" id="fecha" name="fecha" min="1990-01-01" max="2010-01-01">
+                </div>
+                <div class="entrada2">
+                    <label for="color">Seleccione un color</label>
+                    <input type="color" id="color" name="color">
+                </div>
+                <div class="entrada2">
+                    <label>Soy...</label>
+                    <div>
+                        <label for="hombre">Hombre</label>
+                        <input type="radio" value="Hombre" name="genero" id="hombre">
+                        <label for="mujer">Mujer</label>
+                        <input type="radio" value="Mujer" name="genero" id="mujer">
+                        <label for="otro">Otro</label>
+                        <input type="radio" value="Otro" name="genero" id="otro">
+                    </div>
+                </div>
+                <div class="entrada2">
+                    <label for="semestre">Semestre que cursa</label>
+                    <select id="semestre" name="semestre">
+                        <option value="1">Primer Semestre</option>
+                        <option value="2">Segundo Semestre</option>
+                        <option value="3">Tercer Semestre</option>
+                        <option value="4">Cuarto Semestre</option>
+                        <option value="5">Quinto Semestre</option>
+                        <option value="6">Sexto Semestre</option>
+                    </select>
+                </div>
+                <div class="entrada2">
+                    <label for="especialidad">Especialidad</label>
+                    <select id="especialidad" name="especialidad">
+                        <option value="Programación">Programación</option>
+                        <option value="Ofimática">Ofimatica</option>
+                        <option value="Alimentos y bebidas">Alimentos y bebidas</option>
+                        <option value="Hospedaje">Hospedaje</option>
+                        <option value="Contabilidad">Contabilidad</option>
+                    </select>
+                </div>
+                <div class="entrada">
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" placeholder="Ingrese su contraseña" id="contrasena">
+                </div>
+                <div class="entrada">
+                    <label for="confirmar">Confirme su contraseña</label>
+                    <input type="password" placeholder="Ingrese su contraseña" id="confirmar">
+                </div>
+                <div class="entrada2">
+                    <div>
+                        <input type="checkbox" id="publicidad" onclick="document.getElementById('enviar').hidden = !document.getElementById('enviar').hidden">
+                        <label for="publicidad">Estoy de acuerdo con ver publicidad en todar las partes del sitio web</label>
+                    </div>
+                </div>
+                <div class="contenedorBtn">
+                    <input hidden type="submit" value="Crear Cuenta" class="boton" id="enviar" name="enviar">              
+                </div>
+                <div class="contenedorBtn">
+                    <input type="button" value="Regresar" class="boton" id="regresar" name="regresar" onclick="location.href='InicioSesion.html';">              
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

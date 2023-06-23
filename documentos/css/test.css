@@ -27,10 +27,9 @@ body:before{
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(90deg, rgb(8, 8, 8) 0%, rgb(81, 81, 81) 42%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(180deg, rgb(8, 8, 8) 0%, rgb(49, 49, 49) 42%, rgba(78, 78, 78, 0) 100%);
     opacity: 0.5;
     z-index: -1;
-
 }
 
 /*Sección del video*/
@@ -92,7 +91,8 @@ section{
 }
 
 .imagen img{
-    width: 350px;
+
+    max-height: 250px;
     border: 2px solid #0066b2;
     border-radius: 10px;
 }
@@ -210,7 +210,7 @@ h2{
     justify-content: space-between;
 }
 
-.botones > input{
+.boton-regresar, .boton-siguiente{
     background-color: #0066b2;
     border: none;
     color: white;
@@ -220,7 +220,7 @@ h2{
     border-radius: 10px;
 }
 
-.botones > input:hover{
+.boton-regresar:hover, .boton-siguiente:hover{
     border: 2px solid #002D62;
 }
 
@@ -231,7 +231,14 @@ h2{
 .boton-siguiente{
     float: left;
     margin-right: 20px;
+    transition: background-color 0.5s, color 0.5s;
 }
 
+.boton-deshabilitado{
+    background-color: #8d8d8d;
+    color: black;
+}
 
-
+.boton-deshabilitado:hover{
+    border: none;
+}

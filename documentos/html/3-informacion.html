@@ -2,31 +2,33 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Document</title>
+        <title>EcoByte - Aprende Calculo</title>
+        <link rel="icon" href="../../imagenes/favicon_chico.ico">
         <link rel="stylesheet" href="../css/menu-nav.css">
         <link rel="stylesheet" href="../css/informacion.css">
+        <script src="../js/calificaciones.js"></script>
     </head>
     <body>
 
         <!--BARRA DE MENÚ-->
 
-        <header class="menu">
-            <a href="index.html" class="logo">
-                <img src="../../imagenes/ICONOS/favicon2.png" class="logo-favicon">
-                <span class="logo-eco">Eco</span>
-                <span class="logo-byte">Byte</span>
-            </a>
-    
-            <marquee>
-                <p>| EcoByte: Curso gratis y online de calculo difrencial |<a href="index.html">| ¿Ya conoces nuestro producto ecológico? Conocelo y da click aquí |</a></p>
-            </marquee>
-            
-            <nav class="menu-nav">
-                <a href="#">¿Quienes somos?</a>
-                <a href="#">Calificaciones</a>
-                <a href="#">Mi Cuenta</a>
-            </nav>
-        </header>
+    <header class="menu">
+        <a href="index.html" class="logo">
+            <img src="../../imagenes/ICONOS/favicon2.png" class="logo-favicon">
+            <span class="logo-eco">Eco</span>
+            <span class="logo-byte">Byte</span>
+        </a>
+
+        <marquee>
+            <p>| EcoByte: Curso gratis y online de calculo diferencial | <a href="ecologia.html">| ¿Ya conoces nuestro producto ecológico? Conócelo y da click aquí |</a> | ¿Intentas regresar al menú principal? Por qué no pruebas dando click en el logo |</p>
+        </marquee>
+        
+        <nav class="menu-nav">
+            <a href="quienesSomos.html">¿Quiénes somos?</a>
+            <a href="miProgreso.html">Mi progreso</a>
+            <a href="miCuenta.html" id="cuenta">Mi Cuenta</a>
+        </nav>
+    </header>
 
     <!--SECCIÓN DE LA INFORMACIÓN-->
 
@@ -36,6 +38,11 @@
 
                     <h1>Límites</h1>
                     <hr>
+
+                    <div class="audio-contenedor">
+                        <p>Texto a voz</p>
+                        <audio controls src="../../audios/Audio3.mp3"></audio>
+                    </div>
 
                     <h2>¿Qué son los límites?</h2>
                     <p>Las funciones matemáticas se utilizan en otros ámbitos, por ejemplo, para calcular los beneficios o los costes de una empresa, la velocidad o aceleración de un móvil, entre muchas otras cosas, por lo que es importante conocer el comportamiento de una función.</p>
@@ -57,7 +64,7 @@
                         <li>Hacer aproximación. Esta es la ultima opción puesto que se utilizan tablas y gráficas para aproximar el valor del limite.</li>
                     </ul>
 
-                    <p>En caso de que nada funcione, se puede decir que el límite es una verdadera indeterminación ya que puede ser cualquier cosa. Puede ser 0, puede ser ∞, puede ser 1, puede ser 14, puede ser cualquier número.</p>
+                    <p>En caso de que nada funcione, se puede decir que el límite es una verdadera indeterminación ya que puede ser cualquier cosa. Puede ser 0, ∞, 1, 14, puede ser cualquier número.</p>
 
                 </div>
 
@@ -65,8 +72,8 @@
 
                 <div class="botones">
                     <input type="button" class="boton-regresar" value="ANTERIOR" onclick="location.href='3-video.html'">
-                    <h1>Conceptos matemáticos 2</h1>
-                    <input type="button" class="boton-siguiente" value="TERMINADO!">
+                    <h1>Conceptos matemáticos 3</h1>
+                    <input type="button" class="boton-siguiente" value="TERMINADO!" onclick="lvlUp(9)">
                 </div>
             </div>
         </section>

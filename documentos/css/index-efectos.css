@@ -37,6 +37,13 @@
     border: 1px solid #555b5f;
 }
 
+.informacion-boton:hover{
+    color: white;
+    background-color: #49bfff;
+    height: calc(40% + 10px);
+    width: calc(60% + 10px);
+}
+
 /* EFECTO AL SELECCIONAR UN NIVEL */
 
 .nivel-seleccionado{

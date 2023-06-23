@@ -447,6 +447,9 @@ function siguiente(){
             document.getElementById("contenedor").classList.add("test-contenedor-desaprobado");
         }
 
+        document.getElementsByClassName("boton-siguiente")[0].disabled = false;
+        document.getElementsByClassName("boton-siguiente")[0].classList.remove("boton-deshabilitado");
+
     }
 
     setTimeout(function(){

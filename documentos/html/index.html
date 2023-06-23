@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>EcoByte - Aprende Calculo</title>
-
-    <link rel="icon" href="../../imagenes/hola-removebg-preview.ico">
-    <link rel="stylesheet" href="../css/index-default.css">
+    <link rel="icon" href="../../imagenes/favicon_chico.ico">
+    <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/index-efectos.css">
     <link rel="stylesheet" href="../css/menu-nav.css">
-    <script src="../js/variables.js"></script>
     <script src="../js/index.js"></script>
     <script src="../js/progreso.js"></script>
+    <script src="../js/variables.js"></script>
 </head>
 <body>
 
@@ -24,13 +23,13 @@
         </a>
 
         <marquee>
-            <p>| EcoByte: Curso gratis y online de calculo difrencial | <a href="index.html">| ¿Ya conoces nuestro producto ecológico? Conocelo y da click aquí |</a></p>
+            <p>| EcoByte: Curso gratis y online de calculo diferencial | <a href="ecologia.html">| ¿Ya conoces nuestro producto ecológico? Conócelo y da click aquí |</a> | ¿Intentas regresar al menú principal? Por qué no pruebas dando click en el logo |</p>
         </marquee>
         
         <nav class="menu-nav">
-            <a href="#">¿Quienes somos?</a>
-            <a href="#">Calificaciones</a>
-            <a href="#">Mi Cuenta</a>
+            <a href="quienesSomos.html">¿Quiénes somos?</a>
+            <a href="miProgreso.html">Mi progreso</a>
+            <a href="miCuenta.html" id="cuenta">Mi Cuenta</a>
         </nav>
     </header>
 
@@ -92,14 +91,14 @@
 
             <!--ANUNCIO DE ECOLOGÍA-->
 
-            <div class="anuncio">
+            <div class="anuncio" id="divClickeable">
 
                 <div class="anuncio-titulo"><h4>Tipo de material</h4></div>
 
                 <div class="anuncio-descripcion">
                     <div>
-                        <h1>La calculadora reciclada</h1> <br>
-                        <input type="button" class="anuncio-boton">
+                        <h1>La calculadora reciclada</h1>
+                        <h2>Da click y conócela!</h2>
                     </div>
                 </div>
 
@@ -109,4 +108,15 @@
 
     </main>
 </body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var divClickeable = document.getElementById('divClickeable');
+      
+      divClickeable.addEventListener('click', function() {
+        window.location.href = 'ecologia.html';
+      });
+    });
+</script>
+
 </html>

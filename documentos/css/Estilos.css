@@ -1,0 +1,206 @@
+/*Estilos del DOCUMENTO*/
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+
+    background-image: url(../../imagenes/backgrounds/background1.jpg);
+}
+
+body:before{
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgb(8, 8, 8) 0%, rgb(49, 49, 49) 42%, rgba(78, 78, 78, 0) 100%);
+    opacity: 0.5;
+    z-index: -1;
+}
+
+
+/*Estilos del FORMULARIO*/
+
+.formulario {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f5deb3;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px #00000080;
+}
+
+.formulario2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f5deb3;
+    width: 500px;
+    height: 600px;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+
+.logo {
+    display: grid;
+    place-items: center center;
+}
+
+.logo img{
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+h1 {
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid #aa9a7d;
+}
+
+form{
+    padding-left: 0 0 40px 0;
+    box-sizing: border-box;
+}
+
+/*Estilos de las ENTRADAS DE DATOS (cajas de texto, fecha, numbres, etc.)*/
+
+form .entrada {
+    position: relative;
+    border-bottom: 3px solid #766b56;
+    margin: 30px;
+}
+
+.entrada input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.entrada2 #color{
+    width: 100px;
+    height: 30px;
+    border-radius: 50%;
+
+    border: none;
+    background: none;
+    outline: none;
+}
+
+/*Estilos de las ENTRADAS DE DATOS (CheckBox, Radios, Selects, etc.)*/
+
+form .entrada2{
+    display: grid;
+    place-items: center center;
+    text-align: center;
+    height: 55px;
+    margin: 30px;
+    background-color: #aa9a7d;
+    border-radius: 10px;
+}
+
+/*Estilos de los VINCULOS*/
+
+.vinculos{
+    text-align: center;
+    margin: -5px 0 20px 5px;
+}
+
+.vinculos a {
+    text-decoration: none;
+    color: #deb887;
+}
+
+.vinculos a:hover{
+    text-decoration: underline;
+    color: #8c7659;
+}
+
+/*Estilos de los BOTONES*/
+
+.contenedorBtn{
+    display: grid;
+    place-items: center center;
+    margin: 10px;
+}
+
+.boton{
+    width: 80%;
+    height: 50px;
+    border: 1px solid;
+    background: #766b56;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #deb887;
+    cursor: pointer;
+    outline: none;
+}
+
+/*Estilos del input color*/
+
+form .entrada input[type="color"] {
+    width: 100%;
+    padding: 0;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    /* Elimina la apariencia por defecto del input */
+    /** Ignorar la advertencia del navegador **/
+    -webkit-appearance: none;
+}
+
+form .entrada input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+form .entrada input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+}
+
+form .entrada input[type="color"]::-webkit-color-swatch-color {
+    border-radius: 50%;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    border: 2px solid #deb887; /* Borde del checkbox */
+    background-color: #f5deb3; /* Color de fondo */
+    outline: none;
+  }
+  
+  input[type="checkbox"]:checked {
+    background-color: #deb887; /* Color de fondo cuando está marcado */
+  }
+  
+  /* Estilo personalizado del checkbox */
+  input[type="checkbox"]::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #fff; /* Borde del checkbox */
+    background-color: #766b56; /* Color del checkbox */
+    transform: translateY(2px) translateX(2px);
+    visibility: visible;
+  }
+  
+  input[type="checkbox"]:checked::before {
+    background-color: #fff; /* Color del checkbox cuando está marcado */
+  }
+  

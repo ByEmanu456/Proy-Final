@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EcoByte - Aprende Calculo</title>
+    <link rel="icon" href="../../imagenes/favicon_chico.ico">
+    <link rel="stylesheet" href="../css/menu-nav.css">
+    <link rel="stylesheet" href="../css/miProgreso.css">
+    <script src="../js/miProgreso.js"></script>
+</head>
+<body>
+
+    <!--BARRA DE MENÚ-->
+
+    <header class="menu">
+        <a href="index.html" class="logo">
+            <img src="../../imagenes/ICONOS/favicon2.png" class="logo-favicon">
+            <span class="logo-eco">Eco</span>
+            <span class="logo-byte">Byte</span>
+        </a>
+
+        <marquee>
+            <p>| EcoByte: Curso gratis y online de calculo diferencial | <a href="ecologia.html">| ¿Ya conoces nuestro producto ecológico? Conócelo y da click aquí |</a> | ¿Intentas regresar al menú principal? Por qué no pruebas dando click en el logo |</p>
+        </marquee>
+        
+        <nav class="menu-nav">
+            <a href="quienesSomos.html">¿Quiénes somos?</a>
+            <a href="miProgreso.html">Mi progreso</a>
+            <a href="miCuenta.html" id="cuenta">Mi Cuenta</a>
+        </nav>
+    </header>
+
+    <!--PANEL DE INFORMACIÓN DEL USUARIO-->
+
+    <section>
+
+        <div class="progreso-panel">
+
+            <div class="progreso-titulo"><h1>Progreso del curso</h1></div>
+
+            <div class="progreso-contenedor">
+
+                <h1 id="nivel"></h1>
+
+                <meter id="barra" min="0" max="16"></meter>
+
+                <table class="tabla">
+
+                    <tr>
+                        <th>Tema</th>
+                        <th>Video</th>
+                        <th>Conceptos</th>
+                        <th>Ejercicios</th>
+                        <th>Examen</th>
+                    </tr>
+
+                    <tr>
+                        <td>Constantes y Variables</td>
+                        <td id="dato0"></td>
+                        <td id="dato1"></td>
+                        <td id="dato2"></td>
+                        <td id="dato3"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Funciones</td>
+                        <td id="dato4"></td>
+                        <td id="dato5"></td>
+                        <td id="dato6"></td>
+                        <td id="dato7"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Limites</td>
+                        <td id="dato8"></td>
+                        <td id="dato9"></td>
+                        <td id="dato10"></td>
+                        <td id="dato11"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Derivadas</td>
+                        <td id="dato12"></td>
+                        <td id="dato13"></td>
+                        <td id="dato14"></td>
+                        <td id="dato15"></td>
+                    </tr>
+
+                  </table>  
+                
+            </div>
+            <div class="botones">
+                <input type="button" class="boton-regresar" value="Volver" onclick="location.href='index.html'">
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>

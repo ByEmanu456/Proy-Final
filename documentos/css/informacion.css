@@ -21,17 +21,16 @@ body{
     overflow: hidden;
 }
 
-body::before{
+body:before{
     content: "";
     width: 100%;
     min-height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(90deg, rgb(8, 8, 8) 0%, rgb(81, 81, 81) 42%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(180deg, rgb(8, 8, 8) 0%, rgb(49, 49, 49) 42%, rgba(78, 78, 78, 0) 100%);
     opacity: 0.5;
     z-index: -1;
-
 }
 
 /*Sección del video*/
@@ -59,6 +58,20 @@ section{
 
     text-align: justify;
     overflow-y: scroll; 
+}
+
+.informacion-contenedor > div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.informacion-contenedor img{
+    border: 3px solid #0066b2;
+    border-radius: 10px;
 }
 
 .informacion-contenedor h1{
@@ -98,14 +111,23 @@ ul li {
     padding-left: 20px;
     position: relative;
     margin-bottom: 5px;
-  }
+}
 
 ul li::before {
     content: "•";
     position: absolute;
     left: 0;
     color: #5D76A9;
-  }
+}
+
+.audio-contenedor p{
+    margin-top: 0px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.audio-contenedor audio{
+    margin-left: 5px;
+}
 
 /*BOTNES DE LA PARTE INFERIOR*/
 
@@ -141,5 +163,3 @@ ul li::before {
     float: left;
     margin-right: 20px;
 }
-
-

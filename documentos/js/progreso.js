@@ -1,13 +1,37 @@
-var userNivel = pasarNivel();
-var calificiones = [pasarTest1(),pasarTest2(),pasarTest3(),pasarTest4()];
-var n_panel = Math.floor((userNivel - 1 ) / 4);
+var userNivel;
+var calificiones;
+var n_panel;
 
-window.onload = function() { 
+
+function cargarIndex(){
+
+  userNivel =  pasarNivel();
+  calificiones = [pasarTest1(),pasarTest2(),pasarTest3(),pasarTest4()];
+  n_panel = Math.floor((userNivel - 1 ) / 4);
+  console.log(userNivel);
+
   panelActual();
-  verifiProgreso(); 
+  verifiProgreso();
 
-  document.getElementsByClassName('nivel-actual')[0].lastElementChild.firstElementChild.focus();
-};
+  if(userNivel == 17){
+    console.log("Curso completado");
+    
+    document.getElementById("info_titulo").innerHTML = '<h4>Felicidades!!</h4>'
+    document.getElementById("info").innerHTML = `
+    
+    <div>
+        <h1>Haz terminado el curso!</h1> <br>
+        <p>De parte del equipo desarrollador te felicitamos por haber completado el curso y esperamos que te haya sido de utilidad. ¿Ya sacaste 10 en todos tus examenes? ¿Por qué no lo intentas?</p> <br>
+    </div>`;
+
+    document.getElementById("boton").innerHTML = ` <img src="../../imagenes/gifs/graduado.gif" width="70%"> `;
+  }
+
+  else{
+    document.getElementsByClassName('nivel-actual')[0].lastElementChild.firstElementChild.focus();
+  }
+
+}
   
 function verifiProgreso() {
 
@@ -86,4 +110,3 @@ function promedio(){
   return prom;
 
 }
-
